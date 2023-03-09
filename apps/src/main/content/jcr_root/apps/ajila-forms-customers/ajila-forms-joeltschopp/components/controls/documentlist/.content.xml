@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    cq:icon="target"
+    jcr:description="Add document links as download resources..."
+    jcr:primaryType="cq:Component"
+    jcr:title="Document List"
+    sling:resourceSuperType="fd/af/components/guideradiobutton"
+    allowedParents="[*/parsys,*/*layout]"
+    componentGroup="Ajila Forms joeltschopp"/>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:fd="http://www.adobe.com/aemfd/fd/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="dam:Asset">
+    <jcr:content
+        jcr:lastModified="{Date}2020-03-23T10:38:08.192+01:00"
+        jcr:primaryType="dam:AssetContent"
+        sling:resourceType="fd/fm/af/render"
+        affragment="1"
+        type="affragment">
+        <metadata
+            fd:version="1.1"
+            jcr:primaryType="nt:unstructured"
+            author="admin"
+            description="Contains a set of data from /*/meta as hidden fields."
+            formmodel="xmlschema"
+            fragmentModelRoot="/metaType"
+            hasCustomThumbnail="{Boolean}false"
+            title="Meta"
+            xsdRef="/content/dam/formsanddocuments/reference-dor-templates/ajila-forms-joeltschopp/03_schemas/datadictionary.xsd"/>
+    </jcr:content>
+</jcr:root>

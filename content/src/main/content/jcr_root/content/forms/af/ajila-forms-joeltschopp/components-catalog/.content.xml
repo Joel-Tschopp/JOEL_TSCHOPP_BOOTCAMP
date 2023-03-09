@@ -1,0 +1,1047 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:fd="http://www.adobe.com/aemfd/fd/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:deviceGroups="[/etc/mobile/groups/responsive]"
+        cq:template="/conf/ajila-forms-joeltschopp/settings/wcm/templates/basic"
+        jcr:language="en"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Components catalog"
+        sling:resourceType="/apps/ajila-forms-customers/ajila-forms-joeltschopp/components/pages/aftemplatedpage">
+        <parsys1
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <guideheader
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/guideheader">
+                <headerText1
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/textdraw"
+                    _value="&lt;p>Ajila Forms joeltschopp&lt;/p>"
+                    guideNodeClass="guideTextDraw"
+                    name="headerText1"
+                    textIsRich="true"/>
+                <headerText2
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/textdraw"
+                    _value="&lt;p>Sub Header Text&lt;/p>"
+                    guideNodeClass="guideTextDraw"
+                    name="headerText2"
+                    textIsRich="true"/>
+            </guideheader>
+            <guideformtitle
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/formtitle"
+                _value="Formtitle"
+                css="guideformtitle container"
+                guideNodeClass="guideTextDraw"
+                name="formTitle"
+                textIsRich="true"/>
+        </parsys1>
+        <guideContainer
+            fd:version="1.1"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="fd/af/components/guideContainer"
+            actionType="ajila-forms-customers/ajila-forms-joeltschopp/components/actions/submit"
+            autoSaveStrategyType="fd/fp/components/actions/autosave/timebased"
+            clientLibRef="ajila-forms-joeltschopp-form"
+            disableSwipeGesture="{Boolean}false"
+            dorTemplateRef="/content/dam/formsanddocuments/reference-dor-templates/ajila-forms-joeltschopp/02_forms/ajila-forms-joeltschopp-form.xdp"
+            dorType="select"
+            guideCss="guideContainer"
+            guideNodeClass="guideContainerNode"
+            name="guide1"
+            schemaType="xmlschema"
+            textIsRich="true"
+            themeRef="/content/dam/formsanddocuments-themes/ajila-forms-joeltschopp/standard-theme"
+            useExistingAF="false"
+            xsdRef="/content/dam/formsanddocuments/reference-dor-templates/ajila-forms-joeltschopp/03_schemas/ajila-forms-joeltschopp-form.xsd"
+            xsdRootElement="joeltschoppForm">
+            <layout
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="fd/af/layouts/defaultGuideLayout"
+                mobileLayout="fd/af/layouts/mobile/step"
+                toolbarPosition="Bottom"/>
+            <rootPanel
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Root Panel"
+                sling:resourceType="fd/af/components/rootPanel"
+                completionExpReq="{Boolean}true"
+                dorExcludeDescription="true"
+                dorExcludeTitle="true"
+                guideNodeClass="rootPanelNode"
+                name="guideRootPanel"
+                panelSetType="Navigable"
+                validateOnStepCompletion="{Boolean}true">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/layouts/panel/wizard"
+                    enableLayoutOptimization="true"
+                    guideNavigatorTab="wizard-tab"
+                    toolbarPosition="Bottom"/>
+                <items
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/layouts/panel/gridFluidLayout">
+                    <meta
+                        jcr:created="{Date}2020-03-11T08:14:32.991+01:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2020-03-11T08:15:00.527+01:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Meta"
+                        sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/panel"
+                        bindRef="/joeltschoppForm/meta"
+                        fragRef="/content/dam/formsanddocuments/ajila-forms-joeltschopp/fragments/meta"
+                        guideNodeClass="guidePanel"
+                        name="meta"
+                        textIsRich="true"
+                        validateOnStepCompletion="{Boolean}false"
+                        visible="{Boolean}false">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/layouts/panel/gridFluidLayout"
+                            columns="1"
+                            nonNavigable="{Boolean}true"
+                            toolbarPosition="Bottom"/>
+                        <items jcr:primaryType="nt:unstructured"/>
+                    </meta>
+                    <step_1
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Standard Components"
+                        sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/panel"
+                        guideNodeClass="guidePanel"
+                        name="step_1"
+                        textIsRich="true"
+                        validateOnStepCompletion="{Boolean}false">
+                        <items
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/layouts/panel/gridFluidLayout">
+                            <textdraw_copy
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/textdraw"
+                                _value="&lt;p>&lt;b>This catalogue provides an overview of the available form components and fragments. In addition to the standard components, the following pages contain, if available, customer-specific components and fragments.&lt;i>&lt;br>&#xa; &lt;/i>&lt;/b>&lt;/p>&#xa;"
+                                guideNodeClass="guideTextDraw"
+                                name="intro"
+                                textIsRich="true"/>
+                            <panel
+                                jcr:created="{Date}2020-08-17T14:35:16.850+02:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2020-08-17T14:35:39.727+02:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Paragraph"
+                                sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/panel"
+                                guideNodeClass="guidePanel"
+                                name="paragraph"
+                                textIsRich="true"
+                                validateOnStepCompletion="{Boolean}false">
+                                <layout
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/layouts/panel/gridFluidLayout"
+                                    columns="1"
+                                    dorLayoutType="columnar"
+                                    dorNumCols="1"
+                                    nonNavigable="{Boolean}true"
+                                    toolbarPosition="Bottom"/>
+                                <items jcr:primaryType="nt:unstructured">
+                                    <textdraw
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/textdraw"
+                                        _value="&lt;p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.&lt;/p>&#xa;"
+                                        guideNodeClass="guideTextDraw"
+                                        name="text"
+                                        textIsRich="true"/>
+                                </items>
+                            </panel>
+                            <panel_247918939
+                                jcr:created="{Date}2020-08-17T14:36:01.310+02:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2020-08-17T14:36:13.664+02:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Text Fields"
+                                sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/panel"
+                                guideNodeClass="guidePanel"
+                                name="textFields"
+                                textIsRich="true"
+                                validateOnStepCompletion="{Boolean}false">
+                                <layout
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/layouts/panel/gridFluidLayout"
+                                    columns="1"
+                                    dorLayoutType="columnar"
+                                    dorNumCols="1"
+                                    nonNavigable="{Boolean}true"
+                                    toolbarPosition="Bottom"/>
+                                <items
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/layouts/panel/gridFluidLayout">
+                                    <textbox
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Text Box (Single line)"
+                                        sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/textbox"
+                                        assistPriority="label"
+                                        autofillFieldKeyword="name"
+                                        maxChars="256"
+                                        css="widget_ajila-forms-joeltschopp-textbox"
+                                        guideNodeClass="guideTextBox"
+                                        longDescription="&lt;p>Long description&lt;/p>"
+                                        name="textbox1"
+                                        shortDescription="&lt;p>Short description&lt;/p>"
+                                        textIsRich="[true,true,true]"/>
+                                    <textbox2
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Text Box (Multi line)"
+                                        sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/textbox"
+                                        assistPriority="label"
+                                        autofillFieldKeyword="name"
+                                        maxChars="256"
+                                        css="widget_ajila-forms-joeltschopp-textbox"
+                                        guideNodeClass="guideTextBox"
+                                        multiLine="true"
+                                        name="textbox2"
+                                        shortDescription="&lt;p>Short description&lt;/p>&#xd;&#xa;"
+                                        textIsRich="[true,true,true]"/>
+                                    <numericbox
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Numeric Box"
+                                        sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/numericbox"
+                                        assistPriority="label"
+                                        displayIsSameAsValidate="true"
+                                        displayPatternType="custom"
+                                        displayPictureClause="num{(zzzzzzzzzzzzzzzzzzzzzzz.zz)}"
+                                        css="widget_ajila-forms-joeltschopp-numericbox"
+                                        guideNodeClass="guideNumericBox"
+                                        name="numericBox"
+                                        textIsRich="[true,true]"/>
+                                    <email
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Email"
+                                        sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/email"
+                                        assistPriority="label"
+                                        autofillFieldKeyword="email"
+                                        css="widget_ajila-forms-joeltschopp-textbox"
+                                        guideNodeClass="guideTextBox"
+                                        name="email"
+                                        maxChars="256"
+                                        textIsRich="[true,true]"
+                                        validatePictureClause="^(([^&lt;>()\\[\\]\\\\.,;:\\s@&quot;]+(\\.[^&lt;>()\\[\\]\\\\.,;:\\s@&quot;]+)*)|(&quot;.+&quot;))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$"
+                                        validatePictureClauseMessage="Bitte geben Sie eine gültige E-Mail Adresse an (z.B. max.muster@beispiel.ch)."
+                                        validationPatternType="custom"/>
+                                    <telephone
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Phone"
+                                        sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/telephone"
+                                        assistPriority="label"
+                                        autofillFieldKeyword="tel"
+                                        css="widget_ajila-forms-joeltschopp-telephone"
+                                        displayIsSameAsValidate="true"
+                                        displayPatternType="custom"
+                                        displayPictureClause="^([+]|00)[0-9]{0,14}$"
+                                        guideNodeClass="guideTelephone"
+                                        name="phone"
+                                        textIsRich="[true,true]"
+                                        validatePictureClause="^([+]|00)[0-9]{0,14}$"
+                                        validatePictureClauseMessage="Bitte geben Sie eine gültige Telefonnummer inkl. Ländervorwahl (z.B. +41) an."/>
+                                    <datepicker
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Date Picker"
+                                        sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/datepicker"
+                                        assistPriority="label"
+                                        css="widget_ajila_forms_datepicker"
+                                        displayPatternType="custom"
+                                        displayPictureClause="date{DD.MM.YYYY}"
+                                        guideNodeClass="guideDatePicker"
+                                        isEditSameAsDisplayPattern="true"
+                                        name="datePicker"
+                                        textIsRich="[true,true]"
+                                        validatePictureClause="date{YYYY-MM-DD}"
+                                        validatePictureClauseMessage="Bitte geben Sie das Datum im Format DD.MM.YYYY (z.B. 01.01.2020) an."
+                                        validationPatternType="custom"/>
+                                    <timebox
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Time Box"
+                                        sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/timebox"
+                                        assistPriority="label"
+                                        autofillFieldKeyword="name"
+                                        css="widget_ajila-forms-joeltschopp-timebox"
+                                        displayIsSameAsValidate="true"
+                                        displayPatternType="custom"
+                                        displayPictureClause="^(0[0-9]|1[0-9]|2[0-3]|[0-9]):[0-5][0-9]$"
+                                        guideNodeClass="guideTextBox"
+                                        name="timebox"
+                                        textIsRich="[true,true,true]"
+                                        validatePictureClause="^(0[0-9]|1[0-9]|2[0-3]|[0-9]):[0-5][0-9]$"
+                                        validatePictureClauseMessage="Bitte geben Sie die Zeit im Format HH:MM (z.B. 09:30) ein"/>
+                                    <dropdownlist
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Drop-down List"
+                                        sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/dropdownlist"
+                                        assistPriority="label"
+                                        css="widget_ajila-forms-joeltschopp-dropdownlist"
+                                        guideNodeClass="guideDropDownList"
+                                        mandatoryMessage="This is a required field"
+                                        name="dropDownList"
+                                        options="[0=Item 1,1=Item 2]"
+                                        textIsRich="[true,true]"/>
+                                    <panel
+                                        jcr:created="{Date}2020-08-17T14:38:26.929+02:00"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2020-08-17T14:38:37.014+02:00"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Checkboxes"
+                                        sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/panel"
+                                        guideNodeClass="guidePanel"
+                                        name="checkBoxes"
+                                        textIsRich="true"
+                                        validateOnStepCompletion="{Boolean}false">
+                                        <layout
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/layouts/panel/gridFluidLayout"
+                                            columns="1"
+                                            dorLayoutType="columnar"
+                                            dorNumCols="1"
+                                            nonNavigable="{Boolean}true"
+                                            toolbarPosition="Bottom"/>
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <checkbox
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Check Box (horizontal)"
+                                                sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/checkbox"
+                                                assistPriority="caption"
+                                                alignment="guideFieldHorizontalAlignment"
+                                                maxChars="256"
+                                                css="widget_ajila_forms_checkbox"
+                                                guideNodeClass="guideCheckBox"
+                                                mandatoryMessage="This is a required field"
+                                                name="checkboxHorizontal"
+                                                options="[0=Item 1,1=Item 2,2=Item 3]"
+                                                textIsRich="[true,true]"/>
+                                            <checkbox2
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Check Box (vertical)"
+                                                sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/checkbox"
+                                                assistPriority="caption"
+                                                alignment="guideFieldVerticalAlignment"
+                                                maxChars="256"
+                                                css="widget_ajila_forms_checkbox"
+                                                guideNodeClass="guideCheckBox"
+                                                name="checkboxVertical"
+                                                options="[0=Item 1,1=Item 2,2=Item 3]"
+                                                textIsRich="[true,true]"/>
+                                        </items>
+                                    </panel>
+                                    <panel_1854290596
+                                        jcr:created="{Date}2020-08-17T14:39:06.297+02:00"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2020-08-17T14:39:37.753+02:00"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Radiobuttons"
+                                        sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/panel"
+                                        guideNodeClass="guidePanel"
+                                        name="radiobuttons"
+                                        textIsRich="true"
+                                        validateOnStepCompletion="{Boolean}false">
+                                        <layout
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/layouts/panel/gridFluidLayout"
+                                            columns="1"
+                                            dorLayoutType="columnar"
+                                            dorNumCols="1"
+                                            nonNavigable="{Boolean}true"
+                                            toolbarPosition="Bottom"/>
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <radiobutton
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Radio Button (horizontal)"
+                                                sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/radiobutton"
+                                                assistPriority="caption"
+                                                alignment="guideFieldHorizontalAlignment"
+                                                css="widget_ajila_forms_radiobutton"
+                                                guideNodeClass="guideRadioButton"
+                                                mandatoryMessage="This is a required field"
+                                                name="radiobuttonHorizontal"
+                                                options="[0=Item 1,1=Item 2]"
+                                                textIsRich="[true,true]"/>
+                                            <radiobutton_14083190
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Radio Button (vertical)"
+                                                sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/radiobutton"
+                                                assistPriority="caption"
+                                                alignment="guideFieldVerticalAlignment"
+                                                css="widget_ajila_forms_radiobutton"
+                                                guideNodeClass="guideRadioButton"
+                                                mandatoryMessage="This is a required field"
+                                                name="radiobuttonVertical"
+                                                options="[0=Item 1,1=Item 2]"
+                                                textIsRich="[true,true]"/>
+                                        </items>
+                                    </panel_1854290596>
+                                    <panel_545674099
+                                        jcr:created="{Date}2020-08-17T14:40:04.286+02:00"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2020-08-17T14:40:15.514+02:00"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Toggle Switches"
+                                        sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/panel"
+                                        guideNodeClass="guidePanel"
+                                        name="toggle"
+                                        textIsRich="true"
+                                        validateOnStepCompletion="{Boolean}false">
+                                        <layout
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/layouts/panel/gridFluidLayout"
+                                            columns="1"
+                                            dorLayoutType="columnar"
+                                            dorNumCols="1"
+                                            nonNavigable="{Boolean}true"
+                                            toolbarPosition="Bottom"/>
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <toggleswitch
+                                                jcr:lastModified="{Date}2020-08-17T14:40:40.372+02:00"
+                                                jcr:lastModifiedBy="admin"
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Toggle"
+                                                sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/toggleswitch"
+                                                assistPriority="caption"
+                                                alignment="guideFieldHorizontalAlignment"
+                                                css="widget_ajila_forms_toggleswitch"
+                                                guideNodeClass="guideCheckBox"
+                                                hideTitle="true"
+                                                name="toggle"
+                                                options="[1=Toggle]"
+                                                textIsRich="[true,true]"/>
+                                        </items>
+                                    </panel_545674099>
+                                </items>
+                            </panel_247918939>
+                            <documentlist
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Document List"
+                                sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/documentlist"
+                                assistPriority="caption"
+                                alignment="guideFieldVerticalAlignment"
+                                css="widget_ajila-forms-joeltschopp-documentlist"
+                                guideNodeClass="guideRadioButton"
+                                name="documentList"
+                                options="[http://www.africau.edu/images/default/sample.pdf|file_name1.pdf=Item 1,http://www.africau.edu/images/default/sample.pdf|file_name2.pdf=Item 2,http://www.africau.edu/images/default/sample.pdf|file_name3.pdf=Item 3]"
+                                textIsRich="[true,true]"/>
+                            <panel_290925393
+                                jcr:created="{Date}2020-08-17T14:41:32.458+02:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2020-08-17T14:41:54.761+02:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Buttons"
+                                sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/panel"
+                                guideNodeClass="guidePanel"
+                                name="buttons"
+                                textIsRich="true"
+                                validateOnStepCompletion="{Boolean}false">
+                                <layout
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/layouts/panel/gridFluidLayout"
+                                    columns="1"
+                                    dorLayoutType="columnar"
+                                    dorNumCols="1"
+                                    nonNavigable="{Boolean}true"
+                                    toolbarPosition="Bottom"/>
+                                <items jcr:primaryType="nt:unstructured">
+                                    <primarybutton
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Primary Button"
+                                        sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/primarybutton"
+                                        assistPriority="label"
+                                        dorExclusion="true"
+                                        guideNodeClass="guideButton"
+                                        name="primarybutton"
+                                        type="button"/>
+                                    <secondarybutton
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Secondary Button"
+                                        sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/secondarybutton"
+                                        assistPriority="label"
+                                        dorExclusion="true"
+                                        guideNodeClass="guideButton"
+                                        name="secondarybutton"
+                                        type="button"/>
+                                    <tertiarybutton
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Tertiary Button"
+                                        sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/tertiarybutton"
+                                        assistPriority="label"
+                                        css="widget_ajila-forms-joeltschopp-tertiarybutton"
+                                        dorExclusion="true"
+                                        guideNodeClass="guideButton"
+                                        name="tertiarybutton"
+                                        type="button"/>
+                                </items>
+                            </panel_290925393>
+                            <titledraw_copy_979124152
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/titledraw"
+                                _value="&lt;p>File Upload&lt;/p>&#xa;"
+                                guideNodeClass="guideTextDraw"
+                                name="titledraw"
+                                textIsRich="true"/>
+                            <fileupload
+                                jcr:lastModified="{Date}2020-08-17T14:42:23.511+02:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="File Upload"
+                                sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/fileupload"
+                                assistPriority="label"
+                                categoryOptions="[1=Category 1,2=Category 2]"
+                                css="widget_ajila_forms_fileupload"
+                                fileSizeLimit="5"
+                                guideNodeClass="guideTextBox"
+                                hideTitle="true"
+                                maxFileCount="5"
+                                mimeType="[image/*, application/pdf]"
+                                name="fileupload"
+                                placeholderText=" "
+                                showCategory="true"
+                                showComment="true"
+                                uploadBrowserInfoText="or click here to browse your computer."
+                                uploadCategoryTitle="Category"
+                                uploadCommentTitle="Remarks"
+                                uploadDropInfoText="Drag and drop your files here"
+                                uploadFileTypeMessage="The file type is not allowed."
+                                uploadMaxFileCountMessage="Maximum {{maxFiles}} Files can be uploaded."
+                                uploadMaxFileSizeMessage="The file size of {{filesize}} MB exceeds the maximum allowed file size of {{maxFilesize}} MB."
+                                uploadSuccessMessage="File uploaded"
+                                validateExp="ajila.forms.control.fileupload.validate(this);"
+                                validateExpMessage="Please fill in the mandatory fields."/>
+                            <panel_1500253108
+                                jcr:created="{Date}2020-08-17T14:41:32.458+02:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2020-08-17T14:41:54.761+02:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Information Panels"
+                                sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/panel"
+                                guideNodeClass="guidePanel"
+                                name="informationPanel"
+                                textIsRich="true"
+                                validateOnStepCompletion="{Boolean}false">
+                                <layout
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/layouts/panel/gridFluidLayout"
+                                    columns="1"
+                                    dorLayoutType="columnar"
+                                    dorNumCols="1"
+                                    nonNavigable="{Boolean}true"
+                                    toolbarPosition="Bottom"/>
+                                <items jcr:primaryType="nt:unstructured">
+                                    <infobox
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/messagebox"
+                                        _value="&lt;p>&lt;b>Information&lt;/b>&lt;br>&#xa;Some random information text.&lt;/p>&#xa;"
+                                        guideNodeClass="guideTextDraw"
+                                        name="infobox"
+                                        textIsRich="true"
+                                        messageBoxType="infobox"/>
+                                    <errobox
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/messagebox"
+                                        _value="&lt;p>&lt;b>Error&lt;/b>&lt;br>&#xa;Some random error message.&lt;/p>&#xa;"
+                                        guideNodeClass="guideTextDraw"
+                                        name="errorbox"
+                                        textIsRich="true"
+                                        messageBoxType="errorbox"/>
+                                    <alertbox
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/messagebox"
+                                        _value="&lt;p>&lt;b>Alert&lt;/b>&lt;br>&#xa;Some random validation alert.&lt;/p>&#xa;"
+                                        guideNodeClass="guideTextDraw"
+                                        name="alertbox"
+                                        textIsRich="true"
+                                        messageBoxType="alertbox"/>
+                                </items>
+                            </panel_1500253108>
+                        </items>
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/layouts/panel/gridFluidLayout"
+                            columns="1"
+                            dorLayoutType="columnar"
+                            dorNumCols="1"
+                            nonNavigable="{Boolean}true"
+                            toolbarPosition="Bottom"/>
+                    </step_1>
+                    <step_2
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Multi-column layouts and repeatable panels"
+                        sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/panel"
+                        guideNodeClass="guidePanel"
+                        name="step_2"
+                        textIsRich="true"
+                        validateOnStepCompletion="{Boolean}false">
+                        <items
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/layouts/panel/gridFluidLayout">
+                            <pnlOneColumnLayout
+                                jcr:lastModified="{Date}2020-08-17T14:33:41.942+02:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="One Column Layout"
+                                sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/panel"
+                                guideNodeClass="guidePanel"
+                                name="oneColumnLayout"
+                                textIsRich="true"
+                                validateOnStepCompletion="{Boolean}false">
+                                <items
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/layouts/panel/gridFluidLayout">
+                                    <textbox
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Text Box"
+                                        sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/textbox"
+                                        assistPriority="label"
+                                        maxChars="256"
+                                        css="widget_ajila-forms-joeltschopp-textbox"
+                                        guideNodeClass="guideTextBox"
+                                        name="textbox3"/>
+                                </items>
+                                <layout
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/layouts/panel/gridFluidLayout"
+                                    columns="1"
+                                    dorLayoutType="columnar"
+                                    dorNumCols="1"
+                                    nonNavigable="{Boolean}true"
+                                    toolbarPosition="Bottom"/>
+                            </pnlOneColumnLayout>
+                            <pnlTwoColumnLayout
+                                jcr:lastModified="{Date}2020-08-17T14:33:58.568+02:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Two Column Layout"
+                                sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/panel"
+                                guideNodeClass="guidePanel"
+                                name="twoColumnsLayout"
+                                textIsRich="true"
+                                validateOnStepCompletion="{Boolean}false">
+                                <items
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/layouts/panel/gridFluidLayout">
+                                    <textbox
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Text Box"
+                                        sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/textbox"
+                                        assistPriority="label"
+                                        maxChars="256"
+                                        css="widget_ajila-forms-joeltschopp-textbox"
+                                        guideNodeClass="guideTextBox"
+                                        name="textbox4"/>
+                                    <textbox_695125257
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Text Box"
+                                        sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/textbox"
+                                        assistPriority="label"
+                                        maxChars="256"
+                                        css="widget_ajila-forms-joeltschopp-textbox"
+                                        guideNodeClass="guideTextBox"
+                                        name="textbox5"/>
+                                </items>
+                                <layout
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/layouts/panel/gridFluidLayout"
+                                    columns="2"
+                                    dorLayoutType="columnar"
+                                    dorNumCols="1"
+                                    nonNavigable="{Boolean}true"
+                                    toolbarPosition="Bottom"/>
+                            </pnlTwoColumnLayout>
+                            <pnlThreeColumnLayout
+                                jcr:lastModified="{Date}2020-07-10T14:49:19.097+02:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Three Column Layout"
+                                sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/panel"
+                                guideNodeClass="guidePanel"
+                                name="threeColumnsLayout"
+                                textIsRich="true"
+                                validateOnStepCompletion="{Boolean}false">
+                                <items
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/layouts/panel/gridFluidLayout">
+                                    <textbox
+                                        jcr:created="{Date}2020-07-10T14:21:41.999+02:00"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2020-07-10T14:25:06.279+02:00"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Text Box"
+                                        sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/textbox"
+                                        assistPriority="label"
+                                        maxChars="256"
+                                        autofillFieldKeyword="name"
+                                        css="widget_ajila-forms-joeltschopp-textbox"
+                                        guideNodeClass="guideTextBox"
+                                        name="textbox6"
+                                        textIsRich="[true,true,true]"/>
+                                    <textbox_936079370
+                                        jcr:created="{Date}2020-07-10T14:21:46.888+02:00"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2020-07-10T14:25:09.403+02:00"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Text Box"
+                                        sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/textbox"
+                                        assistPriority="label"
+                                        autofillFieldKeyword="name"
+                                        maxChars="256"
+                                        css="widget_ajila-forms-joeltschopp-textbox"
+                                        guideNodeClass="guideTextBox"
+                                        name="textbox7"
+                                        textIsRich="[true,true,true]"/>
+                                    <textbox_1890476208
+                                        jcr:created="{Date}2020-07-10T14:21:50.209+02:00"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2020-07-10T14:25:12.432+02:00"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Text Box"
+                                        sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/textbox"
+                                        assistPriority="label"
+                                        autofillFieldKeyword="name"
+                                        maxChars="256"
+                                        css="widget_ajila-forms-joeltschopp-textbox"
+                                        guideNodeClass="guideTextBox"
+                                        name="textbox8"
+                                        textIsRich="[true,true,true]"/>
+                                </items>
+                                <layout
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/layouts/panel/gridFluidLayout"
+                                    columns="3"
+                                    dorLayoutType="columnar"
+                                    dorNumCols="1"
+                                    nonNavigable="{Boolean}true"
+                                    toolbarPosition="Bottom"/>
+                            </pnlThreeColumnLayout>
+                            <pnlRepeatingPanels
+                                jcr:created="{Date}2020-07-10T14:27:38.922+02:00"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2020-07-10T14:29:31.943+02:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Repeating Panels"
+                                sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/panel"
+                                guideNodeClass="guidePanel"
+                                name="repeatingPanels"
+                                textIsRich="true"
+                                validateOnStepCompletion="{Boolean}false">
+                                <layout
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/layouts/panel/gridFluidLayout"
+                                    columns="1"
+                                    dorLayoutType="columnar"
+                                    dorNumCols="1"
+                                    nonNavigable="{Boolean}true"
+                                    toolbarPosition="Bottom"/>
+                                <items
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/layouts/panel/gridFluidLayout">
+                                    <panel
+                                        jcr:created="{Date}2020-07-10T14:29:39.537+02:00"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2020-07-10T14:39:48.114+02:00"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Row"
+                                        sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/panel"
+                                        guideNodeClass="guidePanel"
+                                        bindRef="/joeltschoppForm/meta"
+                                        hideTitle="true"
+                                        maxOccur="50"
+                                        minOccur="1"
+                                        name="row"
+                                        textIsRich="true"
+                                        validateOnStepCompletion="{Boolean}false">
+                                        <layout
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/layouts/panel/gridFluidLayout"
+                                            columns="2"
+                                            dorLayoutType="columnar"
+                                            dorNumCols="1"
+                                            nonNavigable="{Boolean}true"
+                                            toolbarPosition="Bottom"/>
+                                        <items
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/layouts/panel/gridFluidLayout">
+                                            <textbox_228706526
+                                                jcr:created="{Date}2020-07-10T14:40:33.944+02:00"
+                                                jcr:createdBy="admin"
+                                                jcr:lastModified="{Date}2020-07-10T14:40:42.107+02:00"
+                                                jcr:lastModifiedBy="admin"
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Text Box"
+                                                sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/textbox"
+                                                assistPriority="label"
+                                                autofillFieldKeyword="name"
+                                                maxChars="256"
+                                                css="widget_ajila-forms-joeltschopp-textbox"
+                                                guideNodeClass="guideTextBox"
+                                                name="textbox9"
+                                                textIsRich="[true,true,true]"/>
+                                            <textbox
+                                                jcr:created="{Date}2020-07-10T14:30:48.429+02:00"
+                                                jcr:createdBy="admin"
+                                                jcr:lastModified="{Date}2020-07-10T14:31:00.492+02:00"
+                                                jcr:lastModifiedBy="admin"
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Text Box"
+                                                sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/textbox"
+                                                assistPriority="label"
+                                                autofillFieldKeyword="name"
+                                                maxChars="256"
+                                                css="widget_ajila-forms-joeltschopp-textbox"
+                                                guideNodeClass="guideTextBox"
+                                                name="textbox10"
+                                                textIsRich="[true,true,true]"/>
+                                            <removebutton
+                                                jcr:created="{Date}2020-07-10T14:33:14.800+02:00"
+                                                jcr:createdBy="admin"
+                                                jcr:lastModified="{Date}2020-07-10T14:33:28.045+02:00"
+                                                jcr:lastModifiedBy="admin"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/removebutton"
+                                                assistPriority="label"
+                                                colspan="2"
+                                                dorExclusion="true"
+                                                css="widget_ajila-forms-joeltschopp-removebutton"
+                                                guideNodeClass="guideButton"
+                                                jcr:title="Remove"
+                                                name="removebutton"
+                                                textIsRich="[true,true]"
+                                                type="Button">
+                                                <fd:rules jcr:primaryType="nt:unstructured"/>
+                                                <fd:scripts
+                                                    fd:click="[{&quot;script&quot;:{&quot;content&quot;:&quot;this.parent.instanceManager.removeInstance(this.parent.instanceIndex);&quot;\,&quot;event&quot;:&quot;Click&quot;\,&quot;field&quot;:&quot;guide.guideRootPanel.step_2.pnlRepeatingPanels.panel.removebutton&quot;}\,&quot;nodeName&quot;:&quot;SCRIPTMODEL&quot;\,&quot;version&quot;:1\,&quot;enabled&quot;:true}]"
+                                                    jcr:primaryType="nt:unstructured"/>
+                                            </removebutton>
+                                        </items>
+                                    </panel>
+                                    <tertiarybutton
+                                        jcr:created="{Date}2020-07-10T14:31:24.841+02:00"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2020-07-10T14:32:31.917+02:00"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="+ Add row"
+                                        sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/tertiarybutton"
+                                        assistPriority="label"
+                                        dorExclusion="true"
+                                        css="widget_ajila-forms-joeltschopp-tertiarybutton"
+                                        guideNodeClass="guideButton"
+                                        name="tertiarybutton"
+                                        textIsRich="[true,true]"
+                                        type="Button">
+                                        <fd:rules jcr:primaryType="nt:unstructured"/>
+                                        <fd:scripts
+                                            fd:click="[{&quot;script&quot;:{&quot;field&quot;:&quot;guide.guideRootPanel.step_2.pnlRepeatingPanels.tertiarybutton&quot;\,&quot;event&quot;:&quot;Click&quot;\,&quot;model&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;}\,&quot;content&quot;:&quot;ajila.forms.joeltschopp.common.navigation.addInstance(this.parent.row);&quot;}\,&quot;nodeName&quot;:&quot;SCRIPTMODEL&quot;\,&quot;version&quot;:1\,&quot;enabled&quot;:true}]"
+                                            jcr:primaryType="nt:unstructured"/>
+                                    </tertiarybutton>
+                                </items>
+                            </pnlRepeatingPanels>
+                        </items>
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/layouts/panel/gridFluidLayout"
+                            columns="1"
+                            dorLayoutType="columnar"
+                            dorNumCols="1"
+                            nonNavigable="{Boolean}true"
+                            toolbarPosition="Bottom"/>
+                    </step_2>
+                    <step_3
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="PDF rendering check"
+                        sling:resourceType="fd/af/components/panel"
+                        guideNodeClass="guidePanel"
+                        name="step_3"
+                        textIsRich="true"
+                        validateOnStepCompletion="{Boolean}false">
+                        <items
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/layouts/panel/gridFluidLayout">
+                            <pdf
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="PDF"
+                                sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/pdf"
+                                assistPriority="label"
+                                css="widget_ajila_forms_pdf"
+                                guideNodeClass="guideTextBox"
+                                hideTitle="true"
+                                initScript="ajila.forms.control.pdf.initialize(this)"
+                                name="pdfPreview"/>
+                            <errorbox
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/messagebox"
+                                _value="&lt;p>&lt;b>Übertragungsfehler&lt;/b>&lt;br>&#xa;Das Formular kann nicht gesendet werden. Bitte versuchen Sie es später erneut.&lt;/p>&#xa;"
+                                guideNodeClass="guideTextDraw"
+                                name="submitErrorMessage"
+                                textIsRich="true"
+                                visible="{Boolean}false"
+                                messageBoxType="errorbox"/>
+                            <termsandconditions
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Terms and Conditions"
+                                sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/termsandconditions"
+                                css="widget_ajila_forms_termsandconditions"
+                                custom="Terms And Conditions"
+                                guideNodeClass="guideCheckBox"
+                                name="tac"
+                                tncCheckBoxContent="Yes, I agree"
+                                tncTextContent="Text related to the terms and conditions come here"
+                                visible="{Boolean}false"/>
+                        </items>
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/layouts/panel/gridFluidLayout"
+                            columns="1"
+                            nonNavigable="{Boolean}true"
+                            toolbarPosition="Bottom"/>
+                    </step_3>
+                </items>
+                <toolbar
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Toolbar"
+                    sling:resourceType="fd/af/components/toolbar"
+                    css=""
+                    guideNodeClass="guideToolbar"
+                    name="toolbar">
+                    <items
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="fd/af/layouts/toolbar/defaultToolbarLayout">
+                        <previtemnav
+                            fd:targetVersion="1.1"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Back"
+                            sling:resourceType="fd/af/components/actions/previtemnav"
+                            dorExclusion="true"
+                            guideNodeClass="guideButton"
+                            name="previtemnav"
+                            type="movePrev"/>
+                        <nextitemnav
+                            fd:targetVersion="1.1"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Next"
+                            sling:resourceType="fd/af/components/actions/nextitemnav"
+                            dorExclusion="true"
+                            guideNodeClass="guideButton"
+                            name="nextitemnav"
+                            type="moveNext">
+                            <fd:rules jcr:primaryType="nt:unstructured"/>
+                            <fd:scripts
+                                fd:click="[{&quot;script&quot;:{&quot;field&quot;:&quot;guide.guideRootPanel.toolbar.nextitemnav&quot;\,&quot;event&quot;:&quot;Click&quot;\,&quot;model&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;}\,&quot;content&quot;:&quot;ajila.forms.joeltschopp.common.navigation.nextStep(this);&quot;}\,&quot;nodeName&quot;:&quot;SCRIPTMODEL&quot;\,&quot;version&quot;:1\,&quot;enabled&quot;:true}]"
+                                jcr:primaryType="nt:unstructured"/>
+                        </nextitemnav>
+                        <submit
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Submit"
+                            sling:resourceType="fd/af/components/actions/submit"
+                            dorExclusion="true"
+                            guideNodeClass="guideButton"
+                            name="submit"
+                            type="submit">
+                            <fd:rules jcr:primaryType="nt:unstructured"/>
+                            <fd:scripts
+                                fd:click="[{&quot;script&quot;:{&quot;field&quot;:&quot;guide.guideRootPanel.toolbar.submit&quot;\,&quot;event&quot;:&quot;Click&quot;\,&quot;model&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;}\,&quot;content&quot;:&quot;ajila.forms.joeltschopp.common.navigation.submit(submitErrorMessage);&quot;}\,&quot;nodeName&quot;:&quot;SCRIPTMODEL&quot;\,&quot;version&quot;:1\,&quot;enabled&quot;:true}]"
+                                fd:navigationChange="[{&quot;script&quot;:{&quot;field&quot;:&quot;guide.guideRootPanel.toolbar.submit&quot;\,&quot;event&quot;:&quot;Navigation&quot;\,&quot;content&quot;:&quot;this.visible=(!this.panel.navigationContext.hasNextItem);&quot;}\,&quot;nodeName&quot;:&quot;SCRIPTMODEL&quot;\,&quot;version&quot;:1\,&quot;enabled&quot;:true}]"
+                                jcr:primaryType="nt:unstructured"/>
+                        </submit>
+                    </items>
+                    <layout
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="fd/af/layouts/toolbar/defaultToolbarLayout"/>
+                </toolbar>
+                <fd:scripts
+                    fd:init="[{&quot;script&quot;:{&quot;field&quot;:&quot;guide.guideRootPanel&quot;\,&quot;event&quot;:&quot;Initialize&quot;\,&quot;model&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;}\,&quot;content&quot;:&quot;ajila.forms.joeltschopp.common.initialize();&quot;}\,&quot;nodeName&quot;:&quot;SCRIPTMODEL&quot;\,&quot;version&quot;:1\,&quot;enabled&quot;:true}]"
+                    jcr:primaryType="nt:unstructured"/>
+            </rootPanel>
+            <autoSaveInfo
+                jcr:primaryType="nt:unstructured"
+                metadataselector="global"/>
+            <signerInfo
+                jcr:primaryType="nt:unstructured"
+                firstSignerFormFiller="false"
+                workflowType="SEQUENTIAL">
+                <signer0
+                    jcr:primaryType="nt:unstructured"
+                    signerTitle="Signer One"/>
+            </signerInfo>
+            <view jcr:primaryType="nt:unstructured">
+                <print
+                    jcr:created="{Date}2019-07-29T10:45:01.990+02:00"
+                    jcr:lastModified="{Date}2019-08-23T16:00:25.732+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="fd/af/authoring/components/dor/dorProperties"
+                    accentColor="#246036"
+                    fontFamily="Arial"
+                    hidePanelDescriptions="true"
+                    includeUnboundFields="true"
+                    metaTemplateRef="/libs/fd/af/dor/templates/defaultTemplate.xdp"
+                    optionSeparator=", "
+                    showSelectedOptions="true">
+                    <branding jcr:primaryType="nt:unstructured">
+                        <items jcr:primaryType="nt:unstructured">
+                            <Header jcr:primaryType="nt:unstructured">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <HeaderInfo jcr:primaryType="nt:unstructured">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <AF_FORM_TITLE
+                                                jcr:primaryType="nt:unstructured"
+                                                resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                value="Ajila Forms joeltschopp"/>
+                                            <AF_HEADER_TEXT
+                                                jcr:primaryType="nt:unstructured"
+                                                resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                value="Test Formular"/>
+                                        </items>
+                                    </HeaderInfo>
+                                    <AF_LOGO_IMAGE
+                                        jcr:primaryType="nt:unstructured"
+                                        fileName="logo.png"/>
+                                </items>
+                            </Header>
+                            <Footer jcr:primaryType="nt:unstructured">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <disclaimerLabel
+                                        jcr:primaryType="nt:unstructured"
+                                        resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                        value="DISCLAIMER"/>
+                                    <disclaimerText
+                                        jcr:primaryType="nt:unstructured"
+                                        resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                        value="This document is strictly private, confidential and personal to its recipients and should not be copied, distributed or reproduced in whole or in part, nor passed to any third party."/>
+                                </items>
+                            </Footer>
+                        </items>
+                    </branding>
+                </print>
+            </view>
+        </guideContainer>
+        <parsys2
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <guidefooter
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="fd/af/components/guidefooter">
+                <guidetextdraw1
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/textdraw"
+                    _value="&lt;p>© 2020 Ajila Forms joeltschopp | All rights reserved&lt;/p>"
+                    css="footerText"
+                    guideNodeClass="guideTextDraw"
+                    name="footerText"/>
+            </guidefooter>
+        </parsys2>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <!-- Forms -->
+    <filter root="/content/dam/formsanddocuments/ajila-forms-joeltschopp"/>
+    <filter root="/content/forms/af/ajila-forms-joeltschopp"/>
+
+    <!-- Resources -->
+    <filter root="/content/ajila-forms-customers/ajila-forms-joeltschopp"/>
+    <filter root="/content/dam/formsanddocuments/reference-dor-templates/ajila-forms-joeltschopp"/>
+</workspaceFilter>

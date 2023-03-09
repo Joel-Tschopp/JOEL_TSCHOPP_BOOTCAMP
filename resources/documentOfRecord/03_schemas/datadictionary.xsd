@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSpy v2016 rel. 2 sp1 (x64) (http://www.altova.com) by Ajila (ajila) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:altova="http://www.altova.com/xml-schema-extensions" elementFormDefault="qualified">
+	<xs:complexType name="personType">
+		<xs:annotation>
+			<xs:documentation>Standardised element for personal data.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="firstname" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:appinfo>
+						<altova:exampleValues>
+							<altova:example value="Jones"/>
+						</altova:exampleValues>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="lastname" minOccurs="0">
+				<xs:annotation>
+					<xs:appinfo>
+						<altova:exampleValues>
+							<altova:example value="Indiana"/>
+						</altova:exampleValues>
+					</xs:appinfo>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="dateOfBirth" type="xs:date" minOccurs="0">
+				<xs:annotation>
+					<xs:appinfo>
+						<altova:exampleValues>
+							<altova:example value="1990-10-13"/>
+						</altova:exampleValues>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="phone" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:appinfo>
+						<altova:exampleValues>
+							<altova:example value="+41791234567"/>
+						</altova:exampleValues>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="metaType">
+		<xs:annotation>
+			<xs:documentation>Technical element that is used for the internal form process.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="tech">
+				<xs:annotation>
+					<xs:documentation>Contains technical attributes for handling the form process.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="identification">
+							<xs:annotation>
+								<xs:appinfo>
+									<altova:exampleValues>
+										<altova:example value="5b5cde08-cd45-4d75-bbe3-fbb10523a2c2"/>
+									</altova:exampleValues>
+								</xs:appinfo>
+								<xs:documentation>Defines the unique identification of a form submission on the platform side.</xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:length value="36"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="createdDate" type="xs:dateTime">
+							<xs:annotation>
+								<xs:documentation>Defines the date of the form submission.</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="platform" type="platformType" minOccurs="0">
+							<xs:annotation>
+								<xs:appinfo>
+									<altova:exampleValues>
+										<altova:example value="test"/>
+									</altova:exampleValues>
+								</xs:appinfo>
+								<xs:documentation>Contains the information on which system the form was submitted.</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="manual" type="xs:boolean" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Contains information about whether the PDF file is opened blank, printed and filled out manually. The PDF can react to this use case accordingly during render process.</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="attachments" type="xs:string" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Contains temporarily stored attachment information. The actual files are not included, only references.</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="documentUrl" type="xs:string" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>The URL to the generated document is temporarily stored here. This loses its validity after a certain time.</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="platformType">
+		<xs:annotation>
+			<xs:documentation>Platform on which the form was submitted</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="test"/>
+			<xs:enumeration value="prod"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

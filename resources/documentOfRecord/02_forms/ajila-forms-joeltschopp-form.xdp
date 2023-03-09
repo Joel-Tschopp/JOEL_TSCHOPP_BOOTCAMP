@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xfa generator="Designer_V6.4.0.20180228.1.932123" APIVersion="3.6.18045.0"?>
+<xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2020-04-14T11:26:27Z" uuid="079716ab-0d26-4f04-a82b-74662cd60f8f">
+<template xmlns="http://www.xfa.org/schema/xfa-template/3.6/">
+   <?formServer defaultPDFRenderFormat acrobat11.0dynamic?>
+   <?formServer allowRenderCaching 0?>
+   <?formServer formModel both?>
+   <subform name="joeltschoppForm" layout="tb" locale="de_CH" restoreState="auto">
+      <pageSet>
+         <pageArea name="Page1" id="Page1">
+            <contentArea x="20mm" y="35mm" w="170mm" h="245mm" name="caPage1"/>
+            <medium stock="a4" short="210mm" long="297mm"/>
+            <occur min="1" max="1"/>
+            <subform usehref="..\01_fragments\header.xdp#som($template.form.header)" x="20mm" y="10mm">
+               <bind/>
+               <?templateDesigner expand 1?>
+            </subform>
+            <subform usehref="..\01_fragments\footer.xdp#som($template.form.footer)" x="20mm" y="282mm">
+               <bind match="none" ref=""/>
+               <?templateDesigner expand 1?>
+            </subform>
+            <?templateDesigner expand 1?></pageArea>
+         <pageArea name="Page2" id="Page2_ID">
+            <medium stock="a4" short="210mm" long="297mm"/>
+            <contentArea x="20mm" y="12.5mm" w="170mm" h="267.5mm" name="caPage2"/>
+            <subform usehref="..\01_fragments\footer.xdp#som($template.form.footer)" x="20mm" y="282mm">
+               <bind match="none" ref=""/>
+               <?templateDesigner expand 1?>
+            </subform>
+            <?templateDesigner expand 0?></pageArea>
+         <?templateDesigner expand 0?></pageSet>
+      <subform name="form" layout="tb" w="170mm">
+         <subform w="170mm" layout="tb" name="intro">
+            <bind match="none"/>
+            <draw name="info" usehref="..\01_fragments\defaultStyleCatalog.xfs#som($template.#subform.designer__stylesheet.body)">
+               <ui>
+                  <textEdit multiLine="1"/>
+               </ui>
+               <value>
+                  <exData contentType="text/html">
+                     <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="font-weight:bold;font-style:italic;letter-spacing:0in">Introduction - only visibile in design view (can be deleted)</p><p style="letter-spacing:0in">This template can be adapted according to the customer's stylings. Please note: This template gets all its styles from the linked default style catalog. Therefore styling changes must be made in the linked xfs-File (see window «Style Catalog», Shift + F2). In the linked style catalogue you will also find an overview of the styles which are used for example in the ajila cloud projects. These can be reused or completely adapted according to your needs.</p></body>
+                  </exData>
+               </value>
+            </draw>
+            <?templateDesigner expand 0?>
+            <event activity="initialize" name="event__initialize">
+               <script contentType="application/x-javascript">this.presence = "hidden";
+</script>
+            </event>
+         </subform>
+         <subform layout="lr-tb" name="person" usehref="..\01_fragments\defaultStyleCatalog.xfs#som($template.#subform.designer__stylesheet.subform)">
+            <bind match="none"/>
+            <draw name="title" usehref="..\01_fragments\defaultStyleCatalog.xfs#som($template.#subform.designer__stylesheet.h1)">
+               <ui>
+                  <textEdit multiLine="1"/>
+               </ui>
+               <value>
+                  <text>Person Data - Example</text>
+               </value>
+            </draw>
+            <field name="firstname" usehref="..\01_fragments\defaultStyleCatalog.xfs#som($template.#subform.designer__stylesheet.textfieldTwoColumns)">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <caption>
+                  <value>
+                     <text>First name</text>
+                  </value>
+               </caption>
+               <bind match="dataRef" ref="$.data.person.firstname"/>
+               <value>
+                  <text>Indiana</text>
+               </value>
+            </field>
+            <draw name="spacer1" usehref="..\01_fragments\defaultStyleCatalog.xfs#som($template.#subform.designer__stylesheet.spacer8mm)">
+               <ui>
+                  <textEdit multiLine="1"/>
+               </ui>
+               <value>
+                  <text/>
+               </value>
+            </draw>
+            <field name="lastname" usehref="..\01_fragments\defaultStyleCatalog.xfs#som($template.#subform.designer__stylesheet.textfieldTwoColumns)">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <caption>
+                  <value>
+                     <text>Last name</text>
+                  </value>
+               </caption>
+               <bind match="dataRef" ref="$.data.person.lastname"/>
+               <value>
+                  <text>Jones</text>
+               </value>
+            </field>
+            <field name="dateOfBirth" usehref="..\01_fragments\defaultStyleCatalog.xfs#som($template.#subform.designer__stylesheet.datefieldTwoColumns)">
+               <ui>
+                  <dateTimeEdit/>
+               </ui>
+               <value>
+                  <date>1990-10-13</date>
+               </value>
+               <caption>
+                  <value>
+                     <text>Date Of Birth</text>
+                  </value>
+               </caption>
+               <bind match="dataRef" ref="$.data.person.dateOfBirth">
+                  <picture>date{YYYY-MM-DD}</picture>
+               </bind>
+               <desc>
+                  <exData contentType="text/plain" name="Schema Annotation">&lt;altova:exampleValues xmlns:altova="http://www.altova.com/xml-schema-extensions"&gt;
+   &lt;altova:example value="1990-10-13"/&gt;
+&lt;/altova:exampleValues&gt;</exData>
+               </desc>
+            </field>
+            <draw name="spacer2" usehref="..\01_fragments\defaultStyleCatalog.xfs#som($template.#subform.designer__stylesheet.spacer8mm)">
+               <ui>
+                  <textEdit multiLine="1"/>
+               </ui>
+               <value>
+                  <text/>
+               </value>
+            </draw>
+            <field name="phone" usehref="..\01_fragments\defaultStyleCatalog.xfs#som($template.#subform.designer__stylesheet.textfieldTwoColumns)">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <caption>
+                  <value>
+                     <text>Phone</text>
+                  </value>
+               </caption>
+               <value>
+                  <text>0419219790</text>
+               </value>
+               <bind match="dataRef" ref="$.data.person.phone"/>
+               <desc>
+                  <exData contentType="text/plain" name="Schema Annotation">&lt;altova:exampleValues xmlns:altova="http://www.altova.com/xml-schema-extensions"&gt;
+   &lt;altova:example value="+41791234567"/&gt;
+&lt;/altova:exampleValues&gt;</exData>
+               </desc>
+            </field>
+            <?templateDesigner expand 1?></subform>
+         <bind match="none"/>
+         <?templateDesigner expand 1?></subform>
+      <subform usehref="..\01_fragments\scripts.xdp#som($template.form.scripts)">
+         <bind/>
+         <?templateDesigner expand 1?></subform>
+      <proto>
+         <subform name="designer__stylesheet">
+            <field name="designer.default.checkBox" usehref="..\01_fragments\defaultStyleCatalog.xfs#som($template.#subform.designer__stylesheet.CheckBox)"/>
+            <field name="designer.default.radio" usehref="..\01_fragments\defaultStyleCatalog.xfs#som($template.#subform.designer__stylesheet.designer__radiobutton_holder.RadioButton)"/>
+            <subform name="designer.default.subform" usehref="..\01_fragments\defaultStyleCatalog.xfs#som($template.#subform.designer__stylesheet.Subform)"/>
+            <field name="designer.default.textEdit" usehref="..\01_fragments\defaultStyleCatalog.xfs#som($template.#subform.designer__stylesheet.TextField-C1)"/>
+            <draw name="designer.default.text" usehref="..\01_fragments\defaultStyleCatalog.xfs#som($template.#subform.designer__stylesheet.Text-Caption)"/>
+         </subform>
+      </proto>
+      <desc>
+         <text name="creator">ajila ag</text>
+      </desc>
+      <?templateDesigner Hyphenation excludeInitialCap:1, excludeAllCaps:1, wordCharCnt:7, remainCharCnt:3, pushCharCnt:3?>
+      <?templateDesigner expand 1?>
+      <?renderCache.subset "Arial" 0 0 ISO-8859-1 4 188 49 0003000A000B000C000E000F00100011001200130015001D002400260029002C003300360037004400450046004700480049004A004B004C004D004E004F005000510052005300550056005700580059005A005B005C005E006000A900AA '()+,-./02:ACFIPSTabcdefghijklmnoprstuvwxy{}«»?>
+      <?renderCache.subset "Arial" 1 0 ISO-8859-1 4 72 18 0003002500270029002F00320033004400480049004B004C005000510052005500560057 BDFLOPaefhimnorst?>
+      <?renderCache.subset "Arial" 0 1 ISO-8859-1 4 124 31 0003000B000C001000110027002D00360037004400450046004700480049004A004B004C004F0050005100520053005400550056005700580059005A005C ()-.DJSTabcdefghilmnopqrstuvwy?>
+      <?renderCache.subset "Arial" 1 1 ISO-8859-1 4 96 24 0003000B000C0010002C004400450046004700480049004A004C004F00500051005200550056005700580059005A005C ()-Iabcdefgilmnorstuvwy?>
+      <?renderCache.subset "Myriad Pro" 0 0 ISO-8859-1 4 72 18 00010023002500300031003500420045004600470049004A004D004F0050005300550059 BDOPTadefhilnortx?></subform>
+   <?templateDesigner DefaultPreviewDynamic 1?>
+   <?templateDesigner AutoApplyStyles 1?>
+   <?templateDesigner WidowOrphanControl 0?>
+   <?originalXFAVersion http://www.xfa.org/schema/xfa-template/3.6/?>
+   <?templateDesigner SavePDFWithLog 0?>
+   <?acrobat javaScript strictScoping?>
+   <?templateDesigner Grid show:1, snap:0, units:17, color:ff8080, origin:(0,0), interval:(25000,25000), objsnap:0, guidesnap:0, pagecentersnap:0?>
+   <?templateDesigner Stylesheet ..\01_fragments\defaultStyleCatalog.xfs?>
+   <?templateDesigner SaveTaggedPDF 0?>
+   <?templateDesigner SavePDFWithEmbeddedFonts 0?>
+   <?templateDesigner DefaultLanguage javaScript?>
+   <?templateDesigner DefaultRunAt client?>
+   <?acrobat JavaScript strictScoping?>
+   <?PDFPrintOptions embedViewerPrefs 0?>
+   <?PDFPrintOptions embedPrintOnFormOpen 0?>
+   <?PDFPrintOptions scalingPrefs 0?>
+   <?PDFPrintOptions enforceScalingPrefs 0?>
+   <?PDFPrintOptions paperSource 0?>
+   <?PDFPrintOptions duplexMode 0?>
+   <?templateDesigner DefaultPreviewType interactive?>
+   <?templateDesigner DefaultPreviewPagination simplex?>
+   <?templateDesigner XDPPreviewFormat 20?>
+   <?templateDesigner DefaultCaptionFontSettings face:Myriad Pro;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultValueFontSettings face:Myriad Pro;size:10;weight:normal;style:normal?>
+   <?templateDesigner FormTargetVersion 36?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?>
+   <?templateDesigner Guidelines h:11130100?>
+   <?templateDesigner Zoom 199?></template>
+<config xmlns="http://www.xfa.org/schema/xci/3.0/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo>
+            <embed>0</embed>
+         </fontInfo>
+         <tagged>0</tagged>
+         <version>1.7</version>
+         <adobeExtensionLevel>11</adobeExtensionLevel>
+      </pdf>
+      <common>
+         <data>
+            <xsl>
+               <uri/>
+            </xsl>
+            <outputXSL>
+               <uri/>
+            </outputXSL>
+         </data>
+      </common>
+      <script>
+         <runScripts>server</runScripts>
+      </script>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+   <psMap>
+      <font typeface="Calibri" psName="Calibri-Bold" weight="bold" posture="normal"/>
+      <font typeface="Calibri" psName="Calibri" weight="normal" posture="normal"/>
+      <font typeface="Fira Sans" psName="FiraSans-Regular" weight="normal" posture="normal"/>
+      <font typeface="Helvetica 65 Medium" psName="HelveticaNeue-Heavy" weight="bold" posture="normal"/>
+      <font typeface="Helvetica 45 Light" psName="HelveticaNeue-Light" weight="normal" posture="normal"/>
+      <font typeface="Helvetica 65 Medium" psName="HelveticaNeue-Medium" weight="normal" posture="normal"/>
+   </psMap>
+</config>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale name="de_CH" desc="German (Switzerland)">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>januar</month>
+            <month>Februar</month>
+            <month>März</month>
+            <month>April</month>
+            <month>Mai</month>
+            <month>Juni</month>
+            <month>Juli</month>
+            <month>August</month>
+            <month>September</month>
+            <month>Oktober</month>
+            <month>November</month>
+            <month>Dezember</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>jan</month>
+            <month>Feb</month>
+            <month>Mrz</month>
+            <month>Apr</month>
+            <month>Mai</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Okt</month>
+            <month>Nov</month>
+            <month>Dez</month>
+         </monthNames>
+         <dayNames>
+            <day>Sonntag</day>
+            <day>Montag</day>
+            <day>Dienstag</day>
+            <day>Mittwoch</day>
+            <day>Donnerstag</day>
+            <day>Freitag</day>
+            <day>Samstag</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>So</day>
+            <day>Mo</day>
+            <day>Di</day>
+            <day>Mi</day>
+            <day>Do</day>
+            <day>Fr</day>
+            <day>Sa</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>vorm.</meridiem>
+            <meridiem>nachm.</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>v. Chr.</era>
+            <era>n. Chr.</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, D. MMMM YYYY</datePattern>
+         <datePattern name="long">D. MMMM YYYY</datePattern>
+         <datePattern name="med">DD.MM.YYYY</datePattern>
+         <datePattern name="short">DD.MM.YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">H:MM' Uhr 'Z</timePattern>
+         <timePattern name="long">HH:MM:SS Z</timePattern>
+         <timePattern name="med">HH:MM:SS</timePattern>
+         <timePattern name="short">HH:MM</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GjMtkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$Sz,zz9.99</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">.</numberSymbol>
+         <numberSymbol name="grouping">'</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">SFr.</currencySymbol>
+         <currencySymbol name="isoname">CHF</currencySymbol>
+         <currencySymbol name="decimal">.</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+         <typeface name="Adobe Devanagari"/>
+      </typefaces>
+   </locale>
+</localeSet>
+<xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+   <xfa:data xfa:dataNode="dataGroup"/>
+   <dd:dataDescription xmlns:dd="http://ns.adobe.com/data-description/" dd:name="joeltschoppForm">
+      <joeltschoppForm>
+         <data>
+            <person>
+               <firstname/>
+               <lastname/>
+               <dateOfBirth dd:minOccur="0" dd:nullType="exclude"/>
+               <phone dd:minOccur="0" dd:nullType="exclude"/>
+            </person>
+         </data>
+         <meta dd:minOccur="0">
+            <tech>
+               <identification/>
+               <createdDate/>
+               <platform dd:minOccur="0" dd:nullType="exclude"/>
+               <manual dd:minOccur="0" dd:nullType="exclude"/>
+               <attachments dd:minOccur="0" dd:nullType="exclude"/>
+               <documentUrl dd:minOccur="0" dd:nullType="exclude"/>
+            </tech>
+         </meta>
+      </joeltschoppForm>
+   </dd:dataDescription>
+</xfa:datasets>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.4-c005 78.150055, 2013/08/07-22:58:47        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:pdfuaid="http://www.aiim.org/pdfua/ns/id/" rdf:about="">
+         <xmp:MetadataDate>2020-08-18T16:00:51Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Designer 6.4</xmp:CreatorTool>
+         <pdf:Producer>Designer 6.4</pdf:Producer>
+         <xmpMM:DocumentID>uuid:7c0d2e9a-51e4-45a3-a63d-12d81bfe651c</xmpMM:DocumentID>
+         <xmpMM:InstanceID>uuid:e7f63d91-af26-4b3c-9f07-e7e169e9cab3</xmpMM:InstanceID>
+         <dc:format>application/pdf</dc:format>
+         <dc:creator>
+            <rdf:Seq>
+               <rdf:li>ajila ag</rdf:li>
+            </rdf:Seq>
+         </dc:creator>
+         <pdfuaid:part>1</pdfuaid:part>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+<xfdf xmlns="http://ns.adobe.com/xfdf/" xml:space="preserve">
+   <annots/>
+</xfdf>
+<connectionSet xmlns="http://www.xfa.org/schema/xfa-connection-set/2.8/">
+   <xsdConnection name="ajila-forms-joeltschopp-form" dataDescription="joeltschoppForm">
+      <uri>..\03_schemas\ajila-forms-joeltschopp-form.xsd</uri>
+      <rootElement>joeltschoppForm</rootElement>
+      <?templateDesigner fileDigest shaHash="qbhrYMBbJ2pkyn0w13+N1iM+ts0="?></xsdConnection>
+</connectionSet></xdp:xdp>

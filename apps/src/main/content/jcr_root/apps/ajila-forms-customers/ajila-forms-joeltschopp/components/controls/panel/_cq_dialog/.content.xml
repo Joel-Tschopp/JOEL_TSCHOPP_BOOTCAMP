@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title=""
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          extraClientlibs="[af.authoring.dialog]">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <accordion
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                <items jcr:primaryType="nt:unstructured">
+                    <basic
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Basic"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <hideTitle
+                                jcr:primaryType="nt:unstructured"
+                                sling:orderBefore="description"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                name="./hideTitle"
+                                text="Hide title"
+                                value="true"/>
+                            <panelitemslayout
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                disabled="false"
+                                fieldLabel="Layout"
+                                name="./layout/sling:resourceType"
+                                renderReadOnly="false">
+                                <datasource
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="fd/af/components/commons/datasources/propertyprovider"
+                                    guideDataModel="basic"
+                                    layoutType="fd/af/layouts/panel"
+                                    type="layout"/>
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    af.listeners.change="guidelib.touchlib.editLayer.dialogUtils.layoutOnChange('change');
+                                                        guidelib.touchlib.editLayer.dialogUtils.hideGraniteComponent($(“[name=‘./layout/columns’]“).closest(“.coral-Form-fieldwrapper”), ‘div’);"
+                                    af.listeners.onload="guidelib.touchlib.editLayer.dialogUtils.layoutOnChange();
+                                                        guidelib.touchlib.editLayer.dialogUtils.hideGraniteComponent($(“[name=‘./layout/columns’]“).closest(“.coral-Form-fieldwrapper”), ‘div’);"/>
+                            </panelitemslayout>
+                        </items>
+                        <parentConfig
+                            jcr:primaryType="nt:unstructured"
+                            active="{Boolean}true"/>
+                    </basic>
+                    <validation
+                            jcr:primaryType="nt:unstructured"
+                            sling:orderBefore="help"
+                            jcr:title="Step JavaScript functions"
+                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <enterScript
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="The JavaScript function is called when navigating to a step. The function is not called when the first step is initialised. Error cases do not block the process."
+                                    fieldLabel="Step Enter JavaScript function"
+                                    name="./enterScript"/>
+                            <validationScript
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="The JavaScript function is called when navigating from one step to another. In case of an error, the navigation is aborted."
+                                    fieldLabel="Step Validation JavaScript function"
+                                    name="./validationScript"/>
+                            <leaveScript
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="The JavaScript function is called from one step to another after successful validation. The function is not called on the last step. Error cases do not block the process."
+                                    fieldLabel="Step Leave JavaScript function"
+                                    name="./leaveScript"/>
+                        </items>
+                    </validation>
+                </items>
+            </accordion>
+        </items>
+    </content>
+</jcr:root>

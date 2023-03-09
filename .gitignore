@@ -1,0 +1,6 @@
+.idea
+*.iml
+**/target/**
+apps/src/main/content/jcr_root/libs
+.DS_Store
+debug.log

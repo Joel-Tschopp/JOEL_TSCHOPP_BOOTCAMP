@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <!--Theme -->
+    <filter root="/apps/ajila-forms-customers/ajila-forms-joeltschopp/clientlibs/fd/themes/ajila-forms-joeltschopp"/>
+    <filter root="/content/dam/formsanddocuments-themes/ajila-forms-joeltschopp"/>
+
+    <!-- Templates -->
+    <filter root="/conf/ajila-forms-joeltschopp/"/>
+
+    <!-- Customer components -->
+    <filter root="/apps/ajila-forms-customers/ajila-forms-joeltschopp">
+        <exclude pattern="/apps/ajila-forms-customers/ajila-forms-joeltschopp/install" />
+    </filter>
+</workspaceFilter>

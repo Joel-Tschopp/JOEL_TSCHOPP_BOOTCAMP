@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:Component"
+          jcr:title="PDF"
+          jcr:description="Add a placeholder to display the PDF based on the user input."
+          sling:resourceSuperType="ajila-forms/pdf/components/pdf"
+          allowedParents="[*/parsys,*/*layout]"
+          componentGroup="Ajila Forms joeltschopp"/>

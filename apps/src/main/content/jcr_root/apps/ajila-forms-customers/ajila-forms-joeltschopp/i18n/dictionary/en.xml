@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    jcr:language="en"
+    jcr:mixinTypes="[mix:language]"
+    jcr:primaryType="sling:Folder"
+    sling:basename="/apps/ajila-forms-customers/ajila-forms-joeltschopp/i18n/dictionary">
+    <joeltschopp-common-unexpected-error-body
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="joeltschopp-common-unexpected-error-body"
+        sling:message="An unexpected error has occurred. Please try again later."/>
+    <joeltschopp-common-communication-error-body
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="joeltschopp-common-communication-error-body"
+        sling:message="The form cannot be sent. Please try again later."/>
+    <joeltschopp-common-validation-error-body
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="joeltschopp-common-validation-error-body"
+        sling:message="An error occurred during validation. Please try again later."/>
+    <joeltschopp-common-progressbar
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="joeltschopp-common-progressbar"
+        sling:message="Your progress ({0}%)"/>
+    <joeltschopp-common-progressbar-aria
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="joeltschopp-common-progressbar-aria"
+        sling:message="Your progress is {0}%"/>
+</jcr:root>

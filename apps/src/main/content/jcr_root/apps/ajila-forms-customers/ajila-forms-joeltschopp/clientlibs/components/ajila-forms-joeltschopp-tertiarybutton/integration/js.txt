@@ -1,0 +1,2 @@
+#base=js
+ajila-forms-joeltschopp-tertiarybutton-widget.js

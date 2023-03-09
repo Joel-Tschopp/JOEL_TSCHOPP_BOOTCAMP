@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>ch.ajila</groupId>
+        <artifactId>AjilaParentPom</artifactId>
+        <version>2.1.0</version>
+    </parent>
+    <groupId>com.ajila.forms.joeltschopp</groupId>
+    <artifactId>ajila-forms-joeltschopp</artifactId>
+    <version>6.5.11.0</version>
+    <packaging>pom</packaging>
+    <description>This ajila forms project is based on the ajila-forms-project-template-archetype.</description>
+    <modules>
+        <module>resources</module>
+        <module>bundle</module>
+        <module>content</module>
+        <module>apps</module>
+    </modules>
+    <properties>
+        <scm.connection.segment>ajilach/joel_tschopp_bootcamp.git</scm.connection.segment>
+        <ajila-cloud-platform.version>6.4.0.95</ajila-cloud-platform.version>
+        <ajila-forms-resources-maven-plugin.version>6.4.0.7</ajila-forms-resources-maven-plugin.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>1.8</java.version>
+        <maven-resources-plugin.version>3.0.2</maven-resources-plugin.version>
+        <slf4j.version>1.7.6</slf4j.version>
+        <maven-sling-plugin.version>2.1.0</maven-sling-plugin.version>
+        <content-package-maven-plugin.version>0.0.24</content-package-maven-plugin.version>
+        <maven-bundle-plugin.version>5.1.6</maven-bundle-plugin.version>
+        <maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
+        <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
+        <timestamp>${maven.build.timestamp}</timestamp>
+        <maven.build.timestamp.format>yyyy-MM-dd_HH-mm-ss</maven.build.timestamp.format>
+    </properties>
+    <developers>
+        <developer>
+            <id>jtschopp</id>
+            <name>Joel-Tschopp</name>
+            <email>joel.tschopp@ajila.com</email>
+            <organization>Ajila AG</organization>
+            <organizationUrl>https://www.ajila.com</organizationUrl>
+            <roles>
+                <role>Forms Project Developer</role>
+            </roles>
+        </developer>
+    </developers>
+    <contributors>
+        <contributor>
+            <name>Livia Frey</name>
+            <email>livia.frey@ajila.com</email>
+            <organization>Ajila AG</organization>
+            <organizationUrl>https://www.ajila.com/</organizationUrl>
+            <roles>
+                <role>Archetype Developer</role>
+            </roles>
+        </contributor>
+        <contributor>
+            <name>Noel Simmen</name>
+            <email>noel.simmen@ajila.com</email>
+            <organization>Ajila AG</organization>
+            <organizationUrl>https://www.ajila.com/</organizationUrl>
+            <roles>
+                <role>Archetype Developer</role>
+            </roles>
+        </contributor>
+        <contributor>
+            <name>Pascal Schmidiger</name>
+            <email>pascal.schmidiger@ajila.com</email>
+            <organization>Ajila AG</organization>
+            <organizationUrl>https://www.ajila.com/</organizationUrl>
+            <roles>
+                <role>Archetype Developer</role>
+            </roles>
+        </contributor>
+        <contributor>
+            <name>Richard Wegier</name>
+            <email>richard.wegier@ajila.com</email>
+            <organization>Ajila AG</organization>
+            <organizationUrl>https://www.ajila.com/</organizationUrl>
+            <roles>
+                <role>Archetype Developer</role>
+            </roles>
+        </contributor>
+    </contributors>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.ajila.cloud</groupId>
+                <artifactId>ajila-cloud-platform</artifactId>
+                <version>${ajila-cloud-platform.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.osgi</groupId>
+                <artifactId>org.osgi.service.metatype.annotations</artifactId>
+                <version>1.4.0</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.osgi</groupId>
+                <artifactId>org.osgi.service.component.annotations</artifactId>
+                <version>1.4.0</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.osgi</groupId>
+                <artifactId>org.osgi.service.component</artifactId>
+                <version>1.4.0</version>
+                <scope>provided</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>${maven-resources-plugin.version}</version>
+                    <configuration>
+                        <encoding>${project.build.sourceEncoding}</encoding>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>${maven-surefire-plugin.version}</version>
+                    <configuration>
+                        <forkMode>never</forkMode>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.sling</groupId>
+                    <artifactId>maven-sling-plugin</artifactId>
+                    <version>${maven-sling-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.felix</groupId>
+                    <artifactId>maven-bundle-plugin</artifactId>
+                    <version>${maven-bundle-plugin.version}</version>
+                    <inherited>true</inherited>
+                </plugin>
+                <plugin>
+                    <groupId>com.day.jcr.vault</groupId>
+                    <artifactId>content-package-maven-plugin</artifactId>
+                    <version>${content-package-maven-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>${maven-compiler-plugin.version}</version>
+                    <configuration>
+                        <source>${java.version}</source>
+                        <target>${java.version}</target>
+                        <encoding>${project.build.sourceEncoding}</encoding>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>com.ajila.forms</groupId>
+                    <artifactId>ajila-forms-resources-maven-plugin</artifactId>
+                    <version>${ajila-forms-resources-maven-plugin.version}</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <finalName>${project.artifactId}</finalName>
+    </build>
+    <profiles>
+        <profile>
+            <id>local</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <aem.server>http://localhost</aem.server>
+                <aem.port>4502</aem.port>
+                <!-- Use the context for a Tomcat or JBoss installation, e.g. '/lc' -->
+                <aem.context></aem.context>
+                <aem.user>admin</aem.user>
+                <aem.password>admin</aem.password>
+            </properties>
+        </profile>
+    </profiles>
+</project>

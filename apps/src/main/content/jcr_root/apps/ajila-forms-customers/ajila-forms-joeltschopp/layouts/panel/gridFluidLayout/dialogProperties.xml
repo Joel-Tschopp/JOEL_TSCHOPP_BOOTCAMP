@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    jcr:mixinTypes="[granite:InternalArea]"
+    jcr:primaryType="cq:Panel"
+    border="false"
+    title="Panel properties"
+    xtype="panel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <columns
+            jcr:primaryType="cq:Widget"
+            disabled="false"
+            fieldLabel="Number of columns"
+            grow="false"
+            hideLabel="false"
+            name="./layout/columns"
+            readOnly="false"
+            selected="1"
+            type="combobox"
+            xtype="selection">
+            <options jcr:primaryType="cq:WidgetCollection">
+                <v1
+                    jcr:primaryType="nt:unstructured"
+                    text="1"
+                    value="1"/>
+                <v2
+                    jcr:primaryType="nt:unstructured"
+                    text="2"
+                    value="2"/>
+                <v3
+                    jcr:primaryType="nt:unstructured"
+                    text="3"
+                    value="3"/>
+            </options>
+        </columns>
+    </items>
+</jcr:root>

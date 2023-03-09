@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Date Picker"
+    validatePictureClause="date{YYYY-MM-DD}"
+    validatePictureClauseMessage="Bitte geben Sie das Datum im Format DD.MM.YYYY (z.B. 01.01.2020) an."
+    validationPatternType="custom"
+    css="widget_ajila_forms_datepicker"
+    guideNodeClass="guideDatePicker"
+    assistPriority="label"/>

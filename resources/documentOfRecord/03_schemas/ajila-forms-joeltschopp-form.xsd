@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSpy v2016 rel. 2 sp1 (x64) (http://www.altova.com) by Ajila (ajila) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:altova="http://www.altova.com/xml-schema-extensions" elementFormDefault="qualified">
+	<xs:include schemaLocation="datadictionary.xsd"/>
+	<xs:element name="joeltschoppForm">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="data">
+					<xs:annotation>
+						<xs:documentation>Contains the submitted form data.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="person" type="personType"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="meta" type="metaType" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Technical element that is used for the internal form process.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

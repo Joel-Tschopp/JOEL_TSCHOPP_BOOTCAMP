@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xfa generator="Designer_V6.4.0.20180228.1.932123" APIVersion="3.6.18045.0"?>
+<xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2020-08-17T08:20:48Z" uuid="089e0747-37c0-4363-a200-378c00f12c12">
+<template xmlns="http://www.xfa.org/schema/xfa-template/3.6/">
+   <?formServer defaultPDFRenderFormat acrobat11.0static?>
+   <?formServer allowRenderCaching 0?>
+   <?formServer formModel both?>
+   <subform name="form" locale="en_GB" layout="tb">
+      <pageSet>
+         <pageArea name="Page1">
+            <medium stock="a4" short="210mm" long="297mm"/>
+            <contentArea x="20mm" y="35mm" w="170mm" h="245mm" name="caPage1"/>
+            <?templateDesigner expand 1?></pageArea>
+         <?templateDesigner expand 1?></pageSet>
+      <subform name="scripts" layout="tb" w="170mm">
+         <draw name="info" minH="5mm" w="170mm">
+            <value>
+               <exData contentType="text/html">
+                  <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="font-weight:bold;text-decoration:none;letter-spacing:0in">Information<span style="font-weight:normal"> -<span style="xfa-spacerun:yes">  </span>only visible in design view</span></p><p style="text-decoration:none;letter-spacing:0in">This script fragment contains frequently used scripts such as a form element visitor and scripts to show or hide sections based on data (see the Java Script Docs for more information). These can be reused or completely adapted according to your needs.</p></body>
+               </exData>
+            </value>
+            <ui>
+               <textEdit/>
+            </ui>
+            <font typeface="Arial" size="9.5pt" posture="italic" baselineShift="0pt">
+               <fill>
+                  <color value="128,128,128"/>
+               </fill>
+            </font>
+            <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+            <border>
+               <edge presence="hidden"/>
+               <fill>
+                  <color value="242,242,242"/>
+               </fill>
+            </border>
+            <margin bottomInset="2mm" leftInset="2mm" rightInset="2mm" topInset="2mm"/>
+         </draw>
+         <variables>
+            <script contentType="application/x-javascript" name="sobFormElement">/**
+ * This java script class visits every element on the form from a given starting point.
+ *
+ * @author pschmidiger 
+ */
+var FormElement = function(){
+   /**
+	* The method calls the method 'visitor.visit(foundObjNode)' for each element from the start point. The method also calls the start point.
+	* @param objNode The start point on the formular (e.g. the whole page).
+	* @param visitor The implemented visitor, which is called for every founded element. The visitor needs a method like 'visit(objNode)'.
+	*/
+	this.accept = function(objNode, visitor){
+		if(objNode){		
+			var objChildNode = null;
+			var intNodeLength = objNode.nodes.length;
+			visitor.visit(objNode);	
+			for(var intLoop=0; intLoop&lt;intNodeLength; intLoop++) {
+				objChildNode = objNode.nodes.item(intLoop);
+				new FormElement().accept(objChildNode, visitor);
+			}
+		}	
+	}
+};
+</script>
+            <script contentType="application/x-javascript" name="sobVisibilityHandler">/**
+ * Hides a section if the currentValue is equal to the expected value.
+ * 
+ * @param section Section, which will be set to hidden.
+ * @param currentValue Value, which contains the value for comparison.
+ * @param expectedValue The expected value which results in section hide.
+ */
+function hideSection(section, currentValue, expectedValue){
+	if(currentValue == null || currentValue == expectedValue){
+		section.presence = "hidden";
+	} else {
+		section.presence = "visible";
+	}
+}
+
+/**
+ * Shows a section if the currentValue contains the expected value. 
+ * 
+ * @param section Section, which will be set to visible.
+ * @param currentValue Value, which contains the value for comparison.
+ * @param expected The expected value which results in section hide.
+ */
+function showSection(section, currentValue, expectedValue){
+	if(currentValue != null &amp;&amp; currentValue.indexOf(expectedValue) &gt; -1){
+		section.presence = "visible";
+	} else {
+		section.presence = "hidden";
+	}
+}
+
+/**
+ * Shows a section if the currentValuePath from the data contains the expected value. 
+ * 
+ * @param section Section, which will be set to hidden.
+ * @param currentValuePath Value path to the data, which contains the value for comparison.
+ * @param expected The expected value which results in section hide.
+ */
+function showSectionFromDataValue(section, currentValuePath, expectedValue) {
+	var currentValueNode = xfa.data.resolveNode(currentValuePath);
+	if(currentValueNode != null) {
+		showSection(section, currentValueNode.value, expectedValue);	
+	} else {
+		section.presence = "hidden";
+	}
+}
+
+</script>
+            <?templateDesigner expand 1?></variables>
+         <bind match="none"/>
+         <?templateDesigner isFragment yes?>
+         <?templateDesigner fragmentTitle scripts?>
+         <event activity="initialize" name="event__initialize">
+            <script contentType="application/x-javascript">this.presence = "hidden";
+
+</script>
+         </event>
+         <?templateDesigner expand 1?></subform>
+      <?templateDesigner Hyphenation excludeInitialCap:1, excludeAllCaps:1, wordCharCnt:7, remainCharCnt:3, pushCharCnt:3?>
+      <?templateDesigner expand 1?>
+      <?renderCache.subset "Arial" 0 1 ISO-8859-1 4 124 31 0003000B000C001000110027002D00360037004400450046004700480049004A004B004C004F0050005100520053005400550056005700580059005A005C ()-.DJSTabcdefghilmnopqrstuvwy?>
+      <?renderCache.subset "Arial" 1 1 ISO-8859-1 4 36 9 002C00440049004C00500051005200550057Iafimnort?>
+   </subform>
+   <?originalXFAVersion http://www.xfa.org/schema/xfa-template/3.6/?>
+   <?templateDesigner DefaultLanguage JavaScript?>
+   <?templateDesigner DefaultRunAt client?>
+   <?acrobat JavaScript strictScoping?>
+   <?PDFPrintOptions embedViewerPrefs 0?>
+   <?PDFPrintOptions embedPrintOnFormOpen 0?>
+   <?PDFPrintOptions scalingPrefs 0?>
+   <?PDFPrintOptions enforceScalingPrefs 0?>
+   <?PDFPrintOptions paperSource 0?>
+   <?PDFPrintOptions duplexMode 0?>
+   <?templateDesigner DefaultPreviewType interactive?>
+   <?templateDesigner DefaultPreviewPagination simplex?>
+   <?templateDesigner XDPPreviewFormat 19?>
+   <?templateDesigner DefaultCaptionFontSettings face:Myriad Pro;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultValueFontSettings face:Myriad Pro;size:10;weight:normal;style:normal?>
+   <?templateDesigner Grid show:0, snap:0, units:17, color:ff8080, origin:(0,0), interval:(158750,158750), objsnap:0, guidesnap:0, pagecentersnap:0?>
+   <?templateDesigner FormTargetVersion 36?>
+   <?templateDesigner Zoom 199?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?></template>
+<config xmlns="http://www.xfa.org/schema/xci/3.0/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+         <version>1.7</version>
+         <adobeExtensionLevel>11</adobeExtensionLevel>
+      </pdf>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+</config>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.4-c005 78.150055, 2013/08/07-22:58:47        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:pdfuaid="http://www.aiim.org/pdfua/ns/id/" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:lcd="http://ns.adobe.com/livecycle/designer/" xmlns:dc="http://purl.org/dc/elements/1.1/" rdf:about="">
+         <xmp:MetadataDate>2020-08-17T08:20:48Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Designer 6.4</xmp:CreatorTool>
+         <pdfuaid:part>1</pdfuaid:part>
+         <pdf:Producer>Designer 6.4</pdf:Producer>
+         <xmpMM:DocumentID>uuid:089e0747-37c0-4363-a200-378c00f12c12</xmpMM:DocumentID>
+         <lcd:fragmentCatalog>
+            <rdf:Seq>
+               <rdf:li rdf:parseType="Resource">
+                  <dc:title>
+                     <rdf:Alt>
+                        <rdf:li xml:lang="x-default">scripts</rdf:li>
+                     </rdf:Alt>
+                  </dc:title>
+                  <dc:description>
+                     <rdf:Alt>
+                        <rdf:li xml:lang="x-default"/>
+                     </rdf:Alt>
+                  </dc:description>
+                  <dc:identifier>$template.form.scripts</dc:identifier>
+                  <lcd:fragmentRole>Subform</lcd:fragmentRole>
+               </rdf:li>
+            </rdf:Seq>
+         </lcd:fragmentCatalog>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale name="en_GB" desc="English (United Kingdom)">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>January</month>
+            <month>February</month>
+            <month>March</month>
+            <month>April</month>
+            <month>May</month>
+            <month>June</month>
+            <month>July</month>
+            <month>August</month>
+            <month>September</month>
+            <month>October</month>
+            <month>November</month>
+            <month>December</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mar</month>
+            <month>Apr</month>
+            <month>May</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Oct</month>
+            <month>Nov</month>
+            <month>Dec</month>
+         </monthNames>
+         <dayNames>
+            <day>Sunday</day>
+            <day>Monday</day>
+            <day>Tuesday</day>
+            <day>Wednesday</day>
+            <day>Thursday</day>
+            <day>Friday</day>
+            <day>Saturday</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>Sun</day>
+            <day>Mon</day>
+            <day>Tue</day>
+            <day>Wed</day>
+            <day>Thu</day>
+            <day>Fri</day>
+            <day>Sat</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>AM</meridiem>
+            <meridiem>PM</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>BC</era>
+            <era>AD</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, D MMMM YYYY</datePattern>
+         <datePattern name="long">D MMMM YYYY</datePattern>
+         <datePattern name="med">D MMM YYYY</datePattern>
+         <datePattern name="short">DD/MM/YYYY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">HH:MM:SS Z</timePattern>
+         <timePattern name="long">HH:MM:SS Z</timePattern>
+         <timePattern name="med">HH:MM:SS</timePattern>
+         <timePattern name="short">HH:MM</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GyMdkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$z,zz9.99</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">.</numberSymbol>
+         <numberSymbol name="grouping">,</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">£</currencySymbol>
+         <currencySymbol name="isoname">GBP</currencySymbol>
+         <currencySymbol name="decimal">.</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+         <typeface name="Adobe Devanagari"/>
+      </typefaces>
+   </locale>
+</localeSet></xdp:xdp>

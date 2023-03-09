@@ -1,0 +1,1597 @@
+/*
+ =================================================================================================================
+  Style definitions provided by the archetype. Changes on these styles are implemented in overrides.less
+ =================================================================================================================
+*/
+
+/*
+ ***********************************************
+ * Global definitions
+ ***********************************************
+ */
+
+body {
+  font-family: @default-font;
+}
+
+/*
+***********************************************
+* Form Title
+***********************************************
+*/
+.guideformtitle, .guideTextDraw.guideformtitle {
+  display: block;
+}
+
+@media (min-width: 767px) {
+  .afHeader p {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .formtitle.afFormTitle p {
+    padding-left: 0;
+    line-height: 1.5;
+  }
+
+  .guideformtitle, .guideTextDraw.guideformtitle {
+    margin-left: 10px;
+  }
+}
+
+/*
+***********************************************
+* Headings
+***********************************************
+*/
+h1 {
+  height: auto;
+  font-family: @default-font;
+  font-size: @heading1-font-size;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: @text-color;
+  margin-top: 60px;
+  margin-bottom: 0px;
+  padding-left: 50px;
+}
+
+@media (max-width: 767px) {
+  h1 {
+    padding-left: 0px;
+  }
+}
+
+h2 {
+  font-family: @default-font;
+  font-size: @heading2-font-size;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: @text-color;
+  margin-top: 24px;
+}
+
+h3, .guideGridFluidDescription.guidePanelDescription {
+  font-family: @default-font;
+  font-size: @heading3-font-size;
+  color: @text-color;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  margin: 24px 0px 24px 0px;
+}
+
+.guideGridFluidLayout {
+  color: @text-color;
+}
+
+/*
+***********************************************
+* Header
+***********************************************
+*/
+.afHeader {
+  height: 88px;
+  background-color: @header-background-color;
+  border-color: @header-background-color;
+}
+
+.afHeader .container {
+  height: 85px;
+  background-color: @header-background-color;
+  .customer-header();
+}
+
+.containerbar {
+  height: @header-bar-height;
+  box-shadow: @header-bar-shadow;
+  background-color: @header-bar-background-color;
+  //visibility: hidden;
+}
+
+.headerText1, .headerText2 {
+  display: block !important;
+}
+
+.headerText1 p {
+  font-family: @default-font;
+  font-size: @header1-font-size;
+  font-weight: @header1-font-weight;
+  color: @header1-font-color;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.headerText1.textdraw.guidetextdraw {
+  padding-bottom: 4px;
+}
+
+.headerText2 p {
+  font-family: @default-font;
+  font-size: @header2-font-size;
+  font-weight: @header2-font-weight;
+  color: @header2-font-color
+}
+
+.headerText1 .guideTextDraw.guideStaticText, .headerText2 .guideTextDraw.guideStaticText {
+  padding: 0;
+}
+
+/*
+ ***********************************************
+ * Wizard
+ ***********************************************
+ */
+.wizard-nav-arrow {
+  display: none;
+}
+
+.guideWizardLayout {
+  background-color: @primary-background-color;
+  border: none;
+  padding-top: 0px;
+}
+
+.hide-tab-scroll {
+  display: none !important;
+}
+
+.forms-navigator {
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+  font-size: 0;
+  margin-top: 30px;
+}
+
+.PanelContainer.afWizardPanel {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .PanelContainer.afWizardPanel {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+.afWizardPanel {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 6rem;
+  padding-top: 0;
+}
+
+.guideToolbarNode {
+  margin-top: 36px;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: 767px) {
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .forms-navigator {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .afHeader {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .afHeader .container {
+    background-position-x: 10px;
+  }
+
+  .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .afToolbarButton .guidebutton button:not(.af-icon-button) {
+    width: auto !important;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .guideToolbarNode {
+    left: 0;
+  }
+
+  button.movePrev:not(.af-icon-button):hover .iconButton-icon {
+    background: url(../aem-assets/Chevron-Left-Hover.svg) center center / auto 1.3rem no-repeat
+  }
+}
+
+.step.mobileLayout {
+  display: none;
+}
+
+.progress-text p {
+  font-size: @text-font-size-small;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.ajila-progressbar {
+  border-radius: 8px;
+  height: 100%;
+  background-color: @main-color;
+}
+
+.ajila-progressbar-background {
+  background-color: @background-color;
+  border-radius: 8px;
+  float: left;
+  height: 15%;
+  text-align: center;
+}
+
+.ajila-progressbar-completed {
+  transition: none;
+}
+
+/*
+ ***********************************************
+ * Panel
+ ***********************************************
+ */
+.row .col-md-6:nth-child(odd) {
+  padding-right: 24px;
+}
+
+.cq-Overlay--placeholder {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+@media (max-width: 991px) {
+  .row .col-md-6:nth-child(odd) {
+    padding-right: 0px;
+  }
+
+  .row .col-md-6:nth-child(even) {
+    padding-left: 0px;
+  }
+
+  .row .col-md-4:nth-child(3n+1) {
+    padding-right: 0px;
+  }
+
+  .row .col-md-4:nth-child(3n+2) {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .row .col-md-4:nth-child(3n+3) {
+    padding-left: 0px;
+  }
+
+  .guideGridFluidLayout {
+    overflow-x: inherit;
+  }
+}
+
+@media (max-width: 767px) {
+  [id$="_guide-item-container"] {
+    overflow-x: inherit;
+  }
+}
+
+@media (min-width: 992px) {
+  .row .col-md-6:nth-child(even) {
+    padding-left: 0px;
+  }
+
+  .row .col-md-4:nth-child(3n+1) {
+    padding-right: 24px;
+  }
+
+  .row .col-md-4:nth-child(3n+2) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .row .col-md-4:nth-child(3n+3) {
+    padding-left: 24px;
+  }
+}
+
+.repeatcontainer > .row > div {
+  border-bottom: solid 2px @main-color;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.repeatcontainer > .row > div:last-child {
+  border-bottom: none;
+}
+
+.repeatcontainerbuttons {
+  margin-bottom: 0px;
+}
+
+.repeatcontainerheadertitle {
+  font-size: @heading2-font-size;
+  font-style: italic;
+  font-weight: normal;
+  margin: 12px 0px 24px 0px;
+}
+
+/*
+ ***********************************************
+ * Footer
+ ***********************************************
+ */
+.afFooter {
+  height: @footer-height;
+  background-color: @footer-background-color;
+  margin-top: 1rem;
+  z-index: 10;
+  padding-top: 10px !important;
+}
+
+.afFooter .textdraw {
+  display: @footer-text-display;
+}
+
+.afFooter .textdraw .guideTextDraw p {
+  font-size: @text-font-size-small !important;
+  text-align: center !important;
+  color: @footer-text-color !important;
+  padding-top: 7px;
+}
+
+@media (min-width: 768px) {
+  .afFooter {
+    position: fixed;
+    bottom: 0;
+  }
+}
+
+/*
+ ***********************************************
+ * Infobox / Errorbox
+ ***********************************************
+ */
+.infobox, .alertbox {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.errorbox, .ajilaFormsPdfError {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.ajilaFormsPdfError {
+  padding: 12px 12px 12px 47px;
+  line-height: 1.5;
+}
+
+.messagebox > .guideTextDraw, .ajilaFormsPdfError {
+  border-radius: 4px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 12px 12px;
+}
+
+.messagebox > .infobox.guideTextDraw {
+  border: solid 1px @infobox-color;
+  background-color: @infobox-color;
+  background-image: url(../assets/info.svg);
+}
+
+.messagebox > .errorbox.guideTextDraw {
+  border: solid 1px @errorbox-color;
+  background-color: @errorbox-color;
+  background-image: url(../assets/error.svg);
+
+}
+
+.messagebox > .alertbox.guideTextDraw, .ajilaFormsPdfError {
+  border: solid 1px @alertbox-color;
+  background-color: @alertbox-color;
+  background-image: url(../assets/alert.svg);
+}
+
+.infobox p, .errorbox p, .alertbox p {
+  margin-top: 11.5px;
+  margin-bottom: 10px;
+  padding-left: 45px;
+  padding-right: 12px;
+  font-size: @text-font-size-normal;
+  line-height: 1.5;
+}
+
+.infobox p {
+  color: @info-color;
+}
+
+.errorbox p {
+  color: @error-color;
+}
+
+.alertbox p, .ajilaFormsPdfError {
+  color: @text-color;
+}
+
+.infobox p:before, .errorbox p:before, .alertbox p:before {
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+}
+
+.infobox p:before {
+  border: solid 1.8px @infobox-color;
+}
+
+.errorbox p:before {
+  border: solid 1.8px @errorbox-color;
+}
+
+.alertbox p:before {
+  border: solid 1.8px @alertbox-color;
+}
+
+.infobox .guideFieldNode {
+  padding-top: 0;
+  margin-bottom: 0;
+}
+
+.infobox ul {
+  color: @info-color;
+  line-height: 1.5;
+  padding-left: 56px;
+}
+
+.infobox ol {
+  color: @info-color;
+  line-height: 1.5;
+  padding-left: 56px;
+}
+
+/*
+ ***********************************************
+ * Buttons
+ ***********************************************
+ */
+.afToolbarButton .guidebutton button:not(.af-icon-button), .primarybutton.guidebutton button, .secondarybutton.guidebutton button, .tertiarybutton.guidebutton button {
+  height: 45px;
+  border-radius: 4px;
+  color: @button-font-color;
+  background-color: @main-color;
+  border-color: @main-color;
+  font-family: @default-font;
+  font-size: @button-font-size;
+  font-weight: @button-font-weight;
+}
+
+@media (min-width: 767px) {
+  .afToolbarButton .guidebutton button:not(.af-icon-button), .primarybutton.guidebutton button, .secondarybutton.guidebutton button {
+    min-width: 200px;
+    margin-right: 0px;
+  }
+}
+
+.primarybutton, .secondarybutton {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.tertiarybutton {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.removebutton button, .removebutton button:not(.af-icon-button):hover, .removebutton button:not(.af-icon-button):active, .removebutton button:not(.af-icon-button):focus, .showbutton button, .showbutton button:not(.af-icon-button):hover, .showbutton button:not(.af-icon-button):active, .showbutton button:not(.af-icon-button):focus, .hidebutton button, .hidebutton button:not(.af-icon-button):hover, .hidebutton button:not(.af-icon-button):active, .hidebutton button:not(.af-icon-button):focus {
+  background-color: transparent;
+  background-position: 5px 0;
+  background-size: 24px;
+  background-repeat: no-repeat;
+  border: none;
+  height: 24px;
+  float: right;
+}
+
+.showbutton, .hidebutton {
+  height: 36px;
+  padding-top: 18px;
+}
+
+@media (max-width: 985px) {
+  .showbutton, .hidebutton {
+    padding-top: 0px;
+  }
+}
+
+.removebutton {
+  height: 28px;
+}
+
+.removebutton .iconButton-label, .showbutton .iconButton-label, .hidebutton .iconButton-label {
+  display: none;
+}
+
+.removebutton button, .removebutton button:not(.af-icon-button):hover, .removebutton button:not(.af-icon-button):active, .removebutton button:not(.af-icon-button):focus {
+  background-image: url(../assets/delete.svg);
+}
+
+.showbutton button, .showbutton button:not(.af-icon-button):hover, .showbutton button:not(.af-icon-button):active, .showbutton button:not(.af-icon-button):focus {
+  background-image: url(../assets/show.svg);
+}
+
+.hidebutton button, .hidebutton button:not(.af-icon-button):hover, .hidebutton button:not(.af-icon-button):active, .hidebutton button:not(.af-icon-button):focus {
+  background-image: url(../assets/hide.svg);
+}
+
+button:focus {
+  box-shadow: 0 0 6px @tab-selected-color;
+  background-position: center !important;
+  border-radius: 4px;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+button:hover, button:active {
+  box-shadow: none;
+  outline: none;
+}
+
+.afToolbarButton .guidebutton button.movePrev, .secondarybutton.guidebutton button {
+  border-color: @main-color;
+  background-color: @primary-background-color;
+  color: @main-color;
+}
+
+.tertiarybutton.guidebutton button {
+  height: auto;
+  border: none;
+  background-color: @primary-background-color;
+  color: @main-color;
+  padding: 0;
+  margin-bottom: 12px;
+}
+
+div[id*='toolbar-previtemnav'] {
+  float: left;
+}
+
+div[id*='toolbar-nextitemnav'], div[id*='toolbar-submit'] {
+  float: right;
+}
+
+/*
+ ***********************************************
+ * Inputs general
+ ***********************************************
+ */
+.guideFieldLabel.top {
+  height: 36px;
+}
+
+input, textarea, .dropDownList select, .guideFieldWidget.dateTimeEdit input {
+  position: relative;
+  border-color: @idle-color;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  border-bottom: solid 0.5px;
+  border-radius: 0px;
+  font-size: @text-font-size-normal;
+  font-weight: normal;
+  font-family: @default-font;
+  background-color: transparent;
+}
+
+.guideFieldWidget select::-ms-expand {
+  display: none;
+}
+
+input:hover, textarea:hover, .dropDownList select:hover {
+  background-color: transparent;
+}
+
+textarea {
+  line-height: 1.5;
+  resize: none;
+}
+
+input:focus, textarea:focus, select:focus, .guideFieldWidget.dateTimeEdit input:focus {
+  border-color: @focus-color;
+  border-width: 2px;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.validation-failure input, .validation-failure select, .validation-failure textarea {
+  border-color: @error-color !important;
+}
+
+.guideFieldNode.validation-failure:not(.guideButton):not(.guideTextDraw):not(.guideChart) {
+  border: none;
+  background: none;
+}
+
+.guideFieldNode.validation-success:not(.guideButton):not(.guideTextDraw):not(.guideChart) {
+  border: none;
+  background: none;
+}
+
+.guideFieldNode:not(.guideButton):not(.guideTextDraw):not(.guideChart) {
+  padding: 0;
+  border: none;
+}
+
+.guideFieldNode[data-disabled="true"] input, .guideFieldNode[data-disabled="true"] select {
+  border: none;
+  background: none;
+  opacity: initial;
+}
+
+.guideHelpQuestionMark {
+  z-index: 99;
+  height: 17px;
+  width: 17px;
+  top: 28px;
+  background-color: @icon-background-color;
+  right: 0;
+}
+
+.guideHelpQuestionMark:focus {
+  box-shadow: 0 0 6px @tab-selected-color;
+  outline: none;
+}
+
+.guideHelpQuestionMark:hover {
+  background-color: @main-color;
+}
+
+.guideFieldLabel label, .guideFieldLabel legend, .guideFieldLabel top {
+  min-height: 17px;
+  font-family: @default-font;
+  font-size: @text-font-size-normal;
+  font-weight: bold;
+  color: @idle-color;
+  position: absolute;
+  top: 28px;
+  z-index: 2;
+}
+
+.guideActiveField .guideFieldLabel label, .af-field-filled .guideFieldLabel label {
+  font-size: @text-font-size-small;
+  top: 0px;
+  color: @focus-text-color;
+}
+
+.guideActiveField input, .guideActiveField select, .guideActiveField textarea {
+  color: @focus-text-color;
+}
+
+.guidefield:not(.guideradiobutton):not(.guidecheckbox) .short-description {
+  position: relative;
+  top: 27px;
+}
+
+.short-description p {
+  font-size: @text-font-size-small;
+}
+
+.validation-failure .short-description {
+  display: none;
+}
+
+.validation-failure .guideFieldLabel label, .validation-failure .guideFieldLabel legend {
+  color: @error-color;
+}
+
+.validation-success .dropDownList select, .af-field-filled:not(.validation-failure) .dropDownList select, .validation-success .numericInput input, .af-field-filled:not(.validation-failure) .numericInput input, .validation-success .dateTimeEdit input, .af-field-filled:not(.validation-failure) .dateTimeEdit input, .validation-success .textField input, .af-field-filled:not(.validation-failure) .textField input, .validation-success .textField textarea, .af-field-filled:not(.validation-failure) .textField textarea {
+  border-color: @filled-border-color;
+}
+
+/*
+ ***********************************************
+ * Static TextDraw
+ ***********************************************
+ */
+.guideTextDraw a, .guideTextDraw a:visited {
+  font-weight: normal;
+  color: @hyperlink-color;
+}
+
+.link a, .link a:visited {
+  font-weight: bold !important;
+}
+
+.guideTextDraw a:focus, .link a:focus {
+  box-shadow: 0px 0px 6px @tab-selected-color;
+  border-radius: 4px;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  text-decoration: none;
+}
+
+.textdraw.guidetextdraw ul {
+  padding-inline-start: 20px;
+  margin-block-start: 0px;
+}
+
+.textdraw.guidetextdraw ol {
+  padding-inline-start: 20px;
+}
+
+.guideTextDraw.guideStaticText {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.guideTextDraw .headerText1 p, .guideTextDraw .headerText2 {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+.textdraw .guideTextDraw:not(.headerText1):not(.headerText2) p {
+  font-family: @default-font;
+  font-size: @text-font-size-normal;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.7;
+  letter-spacing: 0.24px;
+  text-align: left;
+  color: @text-color;
+  padding-bottom: 12px;
+}
+
+.titledraw .guideTextDraw p {
+  font-family: @default-font;
+  font-size: @heading3-font-size;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 30px;
+  letter-spacing: normal;
+  text-align: left;
+  color: @text-color;
+  padding-top: 8px;
+}
+
+.titledraw {
+  margin-top: 18px;
+}
+
+.downloadform {
+  padding-top: 24px;
+}
+
+p {
+  margin-top: 0px;
+  margin-bottom: 12px;
+}
+
+/*
+ ***********************************************
+ * DropDownList
+ ***********************************************
+ */
+.guideFieldWidget select {
+  padding-left: 0px;
+}
+
+.guideDropDownList {
+  height: 88px;
+  position: relative;
+  z-index: 0;
+}
+
+.guideFieldWidget.dropDownList {
+  position: absolute;
+  z-index: 1;
+  height: 68px;
+  top: 18px;
+}
+
+.dropDownList select {
+  background: url(../assets/chevron_down.svg) calc(100% - 0.5rem) 50% / auto 1rem no-repeat;
+}
+
+.dropDownList select:hover {
+  background: url(../assets/chevron_down_hover.svg) calc(100% - 0.5rem) 50% / auto 1rem no-repeat;
+}
+
+
+/*
+ ***********************************************
+ * TextField / NumericBox
+ ***********************************************
+ */
+.guideFieldError {
+  padding-top: 0;
+  position: relative;
+  top: 27px;
+  color: @error-color;
+  font-size: @text-font-size-small;
+}
+
+.guideTextBox, .guideNumericBox {
+  height: 88px;
+  position: relative;
+  z-index: 0;
+}
+
+.guideFieldWidget input {
+  padding-left: 1px;
+}
+
+.textField textarea {
+  padding-left: 0px;
+}
+
+.multiline.textField textArea {
+  height: 40px;
+  overflow: hidden;
+}
+
+.guidefield:not(.guideradiobutton):not(.guidecheckbox) label {
+  transition: font-size 500ms, top 500ms;
+  -webkit-transition: font-size 500ms, top 500ms;
+}
+
+.guideFieldNode[data-mandatory=true] .guideFieldLabel label::after {
+  content: ' *';
+}
+
+.guideFieldWidget.textField, .guideFieldWidget.numericInput {
+  position: absolute;
+  z-index: 1;
+  height: 68px;
+  top: 18px;
+}
+
+.guideFieldDescription.long {
+  z-index: 5;
+  position: absolute;
+  background-color: @wizard-background-color;
+  width: 100%;
+  top: 55px;
+  font-size: @text-font-size-small;
+  padding-top: 12px;
+}
+
+/*
+ ***********************************************
+ * DatePicker
+ ***********************************************
+ */
+.guideDatePicker {
+  height: 88px;
+  position: relative;
+  z-index: 0;
+}
+
+.guideFieldWidget.dateTimeEdit {
+  position: absolute;
+  z-index: 1;
+  height: 68px;
+  top: 18px;
+}
+
+.datetimepicker .dp-header {
+  background-color: @primary-background-color;
+  color: @text-color;
+}
+
+.datetimepicker {
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.04);
+  background-color: @primary-background-color;
+  outline: none;
+}
+
+.datetimepicker .dp-caption {
+  font-size: 15px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+  text-align: center;
+  padding-top: 12px;
+}
+
+.datetimepicker .dp-header .dp-leftnav, .datetimepicker .dp-header .dp-rightnav, .datetimepicker .dp-header .dp-leftnav:hover, .datetimepicker .dp-header .dp-rightnav:hover {
+  height: 17px;
+  width: 17px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
+  background-size: 17px auto;
+}
+
+.dp-monthview li {
+  font-family: @default-font;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: center;
+  height: 36px;
+  width: 36px;
+}
+
+.datetimepicker .view ul.header li {
+  font-family: @default-font;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: @idle-color;
+}
+
+.datetimepicker .dp-clear {
+  background-color: @primary-background-color;
+}
+
+.datetimepicker .view ul li.dp-selected, .datetimepicker-notouch .view ul:not(.header) li:not(.disabled):hover {
+  font-size: 15px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+  text-align: center;
+  background-color: @calendar-selected-background-color;
+  border: solid 1px @calendar-selected-background-color;
+  border-radius: 20px;
+  color: @calendar-selected-text-color;
+}
+
+.datetimepicker-notouch .view ul:not(.header) li:not(.disabled):hover {
+  opacity: 1;
+}
+
+.datetimepicker .view ul li.dp-focus {
+  border: none;
+}
+
+.dp-caption {
+  width: 353px !important;
+}
+
+.guidedatepicker .datepicker-calendar-icon {
+  background-image: url(../assets/calendar.svg);
+}
+
+.guidedatepicker .datepicker-calendar-icon:hover {
+  background-image: url(../assets/calendar_hover.svg);
+}
+
+/*
+ ***********************************************
+ * Radio Button
+ ***********************************************
+ */
+.guideradiobutton {
+  margin-bottom: 12px;
+}
+
+.radiobutton .guideRadioButtonItem {
+  margin-right: 24px;
+}
+
+.guideradiobutton .guideFieldLabel label, .guideradiobutton .guideFieldLabel legend, .guideFieldLabel top legend {
+  position: relative;
+  font-size: @text-font-size-small;
+  top: 0;
+}
+
+.guideradiobutton .guideFieldLabel.top {
+  margin-bottom: 6px;
+  height: auto;
+}
+
+/* Customize the label (the container) */
+.ajila_forms_radiobutton_container {
+  padding-left: 30px;
+  font-family: @default-font;
+  color: @text-color;
+  font-size: @text-font-size-normal;
+  margin-bottom: 3px;
+}
+
+/* Create a custom radio button */
+.ajila_forms_radiobutton_circle {
+  border: 1px solid @control-primary-color;
+  background-color: @primary-background-color;
+  padding-right: 0;
+}
+
+/* On mouse-over */
+.ajila_forms_radiobutton_container:hover .ajila_forms_radiobutton_circle {
+  border-color: @control-primary-color;
+}
+
+.ajila_forms_radiobutton_container:hover .ajila_forms_radiobutton_circle:after {
+  border-color: @control-primary-color;
+}
+
+.ajila_forms_radiobutton_container:hover .ajila_forms_radiobutton_circle:after {
+  background: @control-primary-color;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.ajila_forms_radiobutton_container:hover input:checked ~ .ajila_forms_radiobutton_label > .ajila_forms_radiobutton_circle {
+  background: @control-primary-color;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.ajila_forms_radiobutton_container input:checked ~ .ajila_forms_radiobutton_label > .ajila_forms_radiobutton_circle:after {
+  border: 1px solid @control-primary-color;
+  background-color: @primary-background-color;
+}
+
+/* When the radio button is checked, add background */
+.ajila_forms_radiobutton_container input:checked ~ .ajila_forms_radiobutton_label > .ajila_forms_radiobutton_circle {
+  border: 1px solid @control-primary-color;
+  background-color: @control-primary-color;
+}
+
+/* Highlight circle while being focused by tabulator */
+.ajila_forms_radiobutton_container input:checked:focus ~ .ajila_forms_radiobutton_label > .ajila_forms_radiobutton_circle {
+  border: 1px solid @focus-color;
+  background-color: @control-primary-color;
+  box-shadow: 0 0 6px @tab-selected-color;
+}
+
+.ajila_forms_radiobutton_container input:focus:not(:checked) ~ .ajila_forms_radiobutton_label > .ajila_forms_radiobutton_circle {
+  border: 1px solid @focus-color;
+  box-shadow: 0 0 6px @tab-selected-color;
+}
+
+/* Style the indicator (dot/circle) */
+.ajila_forms_radiobutton_container input ~ .ajila_forms_radiobutton_label > .ajila_forms_radiobutton_circle:after {
+  background: @primary-background-color;
+}
+
+.ajila_forms_radiobutton_title, .ajila_forms_radiobutton_element_value {
+  color: @text-color;
+}
+
+/*
+ ***********************************************
+ * CheckBox
+ ***********************************************
+ */
+.guidecheckbox {
+  margin-bottom: 12px;
+}
+
+.guideCheckBoxGroup .guideFieldLabel label, .guideFieldLabel legend {
+  position: relative;
+  font-size: @text-font-size-small;
+  top: 0;
+  margin-left: -2px;
+}
+
+.guideCheckBoxGroup .guideFieldLabel.top {
+  margin-bottom: 0px;
+  height: auto;
+}
+
+.forms-checkbox .form-element__label {
+  font-size: @text-font-size-normal;
+}
+
+.forms-checkbox-label legend {
+  color: @text-color;
+}
+
+.checkbox .guideFieldHorizontalAlignment {
+  width: 32%;
+}
+
+@media (max-width: 767px) {
+  .checkbox .guideFieldHorizontalAlignment {
+    width: 100%;
+  }
+}
+
+.form-element__label {
+  color: @text-color;
+}
+
+.forms-checkbox .forms-checkbox_faux {
+  width: 20px;
+  height: 20px;
+  border: 1px solid @control-primary-color;
+  border-radius: 4px;
+  background: @primary-background-color;
+}
+
+.forms-checkbox__label:hover > .forms-checkbox_faux:after {
+  height: 6px;
+  width: 12px;
+  top: 8px;
+  left: 9px;
+  border-bottom: 2px solid @control-primary-color;
+  border-left: 2px solid @control-primary-color;
+}
+
+.forms-checkbox [type="checkbox"]:checked + .forms-checkbox_faux:after, .forms-checkbox [type="checkbox"]:checked ~ .forms-checkbox_faux:after, .forms-checkbox [type="checkbox"]:checked + .forms-checkbox__label .forms-checkbox_faux:after {
+  height: 6px;
+  width: 12px;
+  top: 8px;
+  left: 9px;
+  border-bottom: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  background: @control-primary-color;
+}
+
+.forms-checkbox input {
+  display: inline;
+  opacity: 0;
+}
+
+.XfaCheckBox input[type='checkbox'] {
+  position: absolute !important;
+}
+
+input[type="checkbox"]:checked ~ .forms-checkbox__label .forms-checkbox_faux {
+  background: @control-primary-color;
+}
+
+[type="checkbox"]:focus:checked + .forms-checkbox__label .forms-checkbox_faux {
+  border-color: @focus-color;
+  box-shadow: 0 0 6px @tab-selected-color;
+  background-color: @control-primary-color;
+  background: @control-primary-color !important;
+}
+
+[type="checkbox"]:focus + .forms-checkbox__label .forms-checkbox_faux {
+  border-color: @focus-color;
+  box-shadow: 0 0 6px @tab-selected-color;
+  background-color: white;
+}
+
+forms-checkbox:hover .forms-checkbox__label > .forms-checkbox_faux:after {
+  border-bottom: 2px solid @control-primary-color;
+  border-left: 2px solid @control-primary-color;
+  background: #ffffff;
+}
+
+.forms-checkbox:hover .forms-checkbox__label > .forms-checkbox_faux {
+  background: #ffffff;
+}
+
+.checkbox .guideCheckBoxItem {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.guideCheckBox .guideFieldError, .guideCheckBoxGroup .guideFieldError {
+  top: 0px;
+}
+
+.forms-checkbox-label {
+  color: @text-color;
+}
+
+/*
+ ***********************************************
+ * Icons
+ ***********************************************
+ */
+.download-icon {
+  text-align: center;
+}
+
+/*
+ ***********************************************
+ * Toggle Switch
+ ***********************************************
+ */
+.toggleswitch .form-element__label {
+  color: @control-primary-color;
+}
+
+.checkbox_toggle .checkbox_faux, .checkbox_toggle .checkbox--faux, .checkbox--toggle .checkbox_faux, .checkbox--toggle .checkbox--faux {
+  border: 1px solid @control-secondary-color;
+  background-color: @control-secondary-color;
+}
+
+.checkbox_toggle [type="checkbox"]:focus + .checkbox_faux, .checkbox_toggle [type="checkbox"]:focus + .checkbox--faux, .checkbox_toggle [type="checkbox"]:focus ~ .checkbox_faux, .checkbox_toggle [type="checkbox"]:focus ~ .checkbox--faux, .checkbox_toggle [type="checkbox"]:focus + .checkbox_faux_container .checkbox_faux, .checkbox_toggle [type="checkbox"]:focus + .checkbox--faux_container .checkbox--faux, .checkbox--toggle [type="checkbox"]:focus + .checkbox_faux, .checkbox--toggle [type="checkbox"]:focus + .checkbox--faux, .checkbox--toggle [type="checkbox"]:focus ~ .checkbox_faux, .checkbox--toggle [type="checkbox"]:focus ~ .checkbox--faux, .checkbox--toggle [type="checkbox"]:focus + .checkbox_faux_container .checkbox_faux, .checkbox--toggle [type="checkbox"]:focus + .checkbox--faux_container .checkbox--faux {
+  background-color: @control-secondary-color;
+  border-color: @control-secondary-color;
+  box-shadow: 0 0 6px @tab-selected-color;
+}
+
+.checkbox_toggle [type="checkbox"]:checked + .checkbox_faux, .checkbox_toggle [type="checkbox"]:checked ~ .checkbox_faux, .checkbox_toggle [type="checkbox"]:checked + .checkbox_faux_container .checkbox_faux, .checkbox--toggle [type="checkbox"]:checked + .checkbox_faux, .checkbox--toggle [type="checkbox"]:checked ~ .checkbox_faux, .checkbox--toggle [type="checkbox"]:checked + .checkbox_faux_container .checkbox_faux {
+  border-color: @main-color;
+  background-color: @main-color;
+}
+
+.checkbox_toggle [type="checkbox"]:checked:focus + .checkbox_faux, .checkbox_toggle [type="checkbox"]:checked:focus + .checkbox--faux, .checkbox_toggle [type="checkbox"]:checked:focus ~ .checkbox_faux, .checkbox_toggle [type="checkbox"]:checked:focus ~ .checkbox--faux, .checkbox_toggle [type="checkbox"]:checked:focus + .checkbox_faux_container .checkbox_faux, .checkbox_toggle [type="checkbox"]:checked:focus + .checkbox--faux_container .checkbox--faux, .checkbox--toggle [type="checkbox"]:checked:focus + .checkbox_faux, .checkbox--toggle [type="checkbox"]:checked:focus + .checkbox--faux, .checkbox--toggle [type="checkbox"]:checked:focus ~ .checkbox_faux, .checkbox--toggle [type="checkbox"]:checked:focus ~ .checkbox--faux, .checkbox--toggle [type="checkbox"]:checked:focus + .checkbox_faux_container .checkbox_faux, .checkbox--toggle [type="checkbox"]:checked:focus + .checkbox--faux_container .checkbox--faux {
+  background-color: @main-color;
+}
+
+.checkbox_toggle [type="checkbox"]:checked + .checkbox_faux:hover, .checkbox_toggle [type="checkbox"]:checked + .checkbox_faux:focus, .checkbox_toggle [type="checkbox"]:checked + .checkbox--faux:hover, .checkbox_toggle [type="checkbox"]:checked + .checkbox--faux:focus, .checkbox_toggle [type="checkbox"]:checked ~ .checkbox_faux:hover, .checkbox_toggle [type="checkbox"]:checked ~ .checkbox_faux:focus, .checkbox_toggle [type="checkbox"]:checked ~ .checkbox--faux:hover, .checkbox_toggle [type="checkbox"]:checked ~ .checkbox--faux:focus, .checkbox_toggle [type="checkbox"]:checked + .checkbox_faux_container .checkbox_faux:hover, .checkbox_toggle [type="checkbox"]:checked + .checkbox_faux_container .checkbox_faux:focus, .checkbox_toggle [type="checkbox"]:checked + .checkbox--faux_container .checkbox--faux:hover, .checkbox_toggle [type="checkbox"]:checked + .checkbox--faux_container .checkbox--faux:focus, .checkbox--toggle [type="checkbox"]:checked + .checkbox_faux:hover, .checkbox--toggle [type="checkbox"]:checked + .checkbox_faux:focus, .checkbox--toggle [type="checkbox"]:checked + .checkbox--faux:hover, .checkbox--toggle [type="checkbox"]:checked + .checkbox--faux:focus, .checkbox--toggle [type="checkbox"]:checked ~ .checkbox_faux:hover, .checkbox--toggle [type="checkbox"]:checked ~ .checkbox_faux:focus, .checkbox--toggle [type="checkbox"]:checked ~ .checkbox--faux:hover, .checkbox--toggle [type="checkbox"]:checked ~ .checkbox--faux:focus, .checkbox--toggle [type="checkbox"]:checked + .checkbox_faux_container .checkbox_faux:hover, .checkbox--toggle [type="checkbox"]:checked + .checkbox_faux_container .checkbox_faux:focus, .checkbox--toggle [type="checkbox"]:checked + .checkbox--faux_container .checkbox--faux:hover, .checkbox--toggle [type="checkbox"]:checked + .checkbox--faux_container .checkbox--faux:focus {
+  background-color: @main-color;
+}
+
+.checkbox_toggle [type="checkbox"]:checked + .checkbox_faux:after, .checkbox_toggle [type="checkbox"]:checked + .checkbox--faux:after, .checkbox_toggle [type="checkbox"]:checked ~ .checkbox_faux:after, .checkbox_toggle [type="checkbox"]:checked ~ .checkbox--faux:after, .checkbox_toggle [type="checkbox"]:checked + .checkbox_faux_container .checkbox_faux:after, .checkbox_toggle [type="checkbox"]:checked + .checkbox--faux_container .checkbox--faux:after, .checkbox--toggle [type="checkbox"]:checked + .checkbox_faux:after, .checkbox--toggle [type="checkbox"]:checked + .checkbox--faux:after, .checkbox--toggle [type="checkbox"]:checked ~ .checkbox_faux:after, .checkbox--toggle [type="checkbox"]:checked ~ .checkbox--faux:after, .checkbox--toggle [type="checkbox"]:checked + .checkbox_faux_container .checkbox_faux:after, .checkbox--toggle [type="checkbox"]:checked + .checkbox--faux_container .checkbox--faux:after {
+  display: none;
+}
+
+/*
+ ***********************************************
+ * FileUpload
+ ***********************************************
+ */
+.fileupload {
+  margin-top: 24px;
+}
+
+.fileupload-icon {
+  background-image: url(../assets/upload.svg);
+}
+
+.fileupload-dropzone {
+  border: dashed 2px @main-color;
+}
+
+.fileupload-dropzone:focus {
+  box-shadow: 0 0 6px @tab-selected-color;
+}
+
+.fileupload-remove {
+  background-image: url(../assets/delete.svg);
+}
+
+.fileupload-remove:focus {
+  box-shadow: 0 0 6px @tab-selected-color;
+}
+
+.fileupload-download {
+  background-image: url(../assets/download.svg);
+}
+
+.fileupload-download:focus {
+  box-shadow: 0 0 6px @tab-selected-color;
+}
+
+.fileupload-progressbar {
+  background-color: @success-color;
+}
+
+.dz-error .fileupload-progressbar {
+  background-color: @error-color;
+}
+
+.fileupload-fileerror {
+  font-size: @text-font-size-small;
+  color: @error-color;
+}
+
+/*
+ ***********************************************
+ * Terms and Conditions
+ ***********************************************
+ */
+.termsandconditions.guidefield {
+  background-color: rgba(111, 111, 111, 0.975);
+  min-height: 30%;
+}
+
+.termsandconditions .guideFieldLabel label {
+  top: 20px;
+}
+
+.tnc-content-area {
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.termsandconditions .tnc-button {
+  height: 45px;
+  border: solid 2px #fff;
+  border-radius: 4px;
+  font-size: @text-font-size-normal;
+  font-weight: bold;
+  padding-top: 2px;
+}
+
+.termsandconditions a {
+  font-weight: bold;
+  color: white;
+  text-decoration: underline;
+}
+
+/*
+ ***********************************************
+ * Document List
+ ***********************************************
+ */
+.documentlist {
+  background-color: @documentlist-background-color;
+  border-radius: 4px;
+  padding-bottom: 1px;
+}
+
+.documentlist .guideFieldLabel h3 {
+  color: @text-color;
+  font-size: @heading3-font-size !important;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  padding: 24px 0px 0px 24px;
+}
+
+.documentlist.guideradiobutton.guidefield {
+  margin-top: 36px;
+}
+
+.documentlist ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+  padding: 0;
+}
+
+.documentlist li {
+  height: 49px;
+  list-style: none;
+}
+
+.documentlist .guideRadioButtonItem {
+  background-image: url(../assets/document_download.svg);
+  background-repeat: no-repeat;
+  height: 100%;
+  background-size: auto 48px;
+  padding-left: 60px;
+  margin: 24px;
+  background-position-x: 3px;
+  padding-top: 4px;
+  width: inherit;
+}
+
+.documentlist .guideWidgetLabel span {
+  font-family: @default-font;
+  font-size: @text-font-size-normal;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: @text-color;
+  margin-left: -3px;
+}
+
+.documentlist .documentlist-filename span {
+  font-size: 12px;
+  font-weight: normal;
+  font-style: italic;
+  padding-left: 4px;
+}
+
+.documentTitle {
+  float: left;
+  clear: left;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.documentName {
+  float: left;
+  clear: left;
+  font-size: @text-font-size-medium;
+}
+
+.guideRadioButtonItem:focus {
+  box-shadow: 0px 0px 6px @tab-selected-color;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+@media (max-width: 991px) {
+  .documentlist .guideWidgetLabel span {
+    margin-left: -5px;
+  }
+
+  .documentlist .documentlist-filename span {
+    padding-left: 2px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .documentlist .documentlist-filename span {
+    padding-left: 0px !important;
+  }
+}
+
+/*
+ ***********************************************
+ * PDF
+ ***********************************************
+ */
+.pdf > .guideTextBox {
+  height: auto !important;
+}
+
+/*
+ ***********************************************
+ * Placeholder
+ ***********************************************
+ */
+input::placeholder, textarea::placeholder {
+  color: transparent;
+}
+
+input:focus::placeholder, textarea:focus::placeholder {
+  color: @idle-color;
+}
+
+/* Internet Explorer */
+
+input:-ms-input-placeholder {
+  color: transparent;
+  border-color: @control-primary-color;
+}
+
+input:focus:-ms-input-placeholder {
+  color: @idle-color;
+}
+
+/*
+ ***********************************************
+ * Image
+ ***********************************************
+ */
+.guideImage img {
+  height: auto;
+  max-height: 100%;
+  margin: 1rem 1rem 1rem 0;
+  padding-right: 1rem;
+  width: inherit;
+  max-width: calc(98.5%);
+}
+
+/*
+ ***********************************************
+ * Special rules for Safari
+ ***********************************************
+ */
+@media not all and (min-resolution: .001dpcm) {
+  @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+    .ajila_forms_radiobutton_container {
+      padding-left: 10px;
+    }
+  }
+}
+
+/*
+ ***********************************************
+ * Special rules for Win HCM
+ ***********************************************
+ */
+
+@media screen and (-ms-high-contrast: active) {
+  .afHeader .container {
+    .customer-header-hcm();
+  }
+
+  .removebutton button, .removebutton button:not(.af-icon-button):hover, .removebutton button:not(.af-icon-button):active, .removebutton button:not(.af-icon-button):focus {
+    background-image: url(../assets/delete_white.svg);
+  }
+
+  .hidebutton button, .hidebutton button:not(.af-icon-button):hover, .hidebutton button:not(.af-icon-button):active, .hidebutton button:not(.af-icon-button):focus {
+    background-image: url(../assets/hide_white.svg);
+  }
+
+  .showbutton button, .showbutton button:not(.af-icon-button):hover, .showbutton button:not(.af-icon-button):active, .showbutton button:not(.af-icon-button):focus {
+    background-image: url(../assets/show_white.svg);
+  }
+
+  .messagebox > .infobox.guideTextDraw {
+    background-image: url(../assets/info_white.svg);
+  }
+
+  .messagebox > .errorbox.guideTextDraw {
+    background-image: url(../assets/error_white.svg);
+  }
+
+  .messagebox > .alertbox.guideTextDraw, .ajilaFormsPdfError {
+    background-image: url(../assets/alert_white.svg);
+  }
+
+  .documentlist .guideRadioButtonItem {
+    background-image: url(../assets/document_download_white.svg);
+  }
+
+  .fileupload-icon {
+    background-image: url(../assets/upload_white.svg);
+  }
+
+  .fileupload-remove {
+    background-image: url(../assets/delete_white.svg);
+  }
+
+  .fileupload-download {
+    background-image: url(../assets/download_white.svg);
+  }
+
+  .ajila-progressbar-background {
+    visibility: hidden;
+  }
+}
+
+/*
+***********************************************
+* Authoring adjustments
+***********************************************
+*/
+.aem-AuthorLayer-Edit .guidetextbox .guideFieldLabel label, .aem-AuthorLayer-Edit .guidenumericbox .guideFieldLabel label, .aem-AuthorLayer-Edit .guidedropdownlist .guideFieldLabel label, .aem-AuthorLayer-Edit .guidedatepicker .guideFieldLabel label {
+  &:extend(.guideActiveField .guideFieldLabel label);
+}

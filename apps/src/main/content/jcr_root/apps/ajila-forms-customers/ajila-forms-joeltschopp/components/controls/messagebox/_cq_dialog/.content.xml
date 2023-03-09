@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title=""
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[af.authoring.dialog]">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <accordion
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                <items jcr:primaryType="nt:unstructured">
+                    <basic
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Basic"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <messageBoxType
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                disabled="false"
+                                fieldDescription="Select the desired MessageBox type"
+                                fieldLabel="MessageBox type"
+                                name="./messageBoxType"
+                                renderReadOnly="false">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <info
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Info"
+                                        value="infobox"/>
+                                    <alert
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Alert"
+                                        value="alertbox"/>
+                                    <error
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Error"
+                                        value="errorbox"/>
+                                </items>
+                            </messageBoxType>
+                        </items>
+                    </basic>
+                </items>
+            </accordion>
+        </items>
+    </content>
+</jcr:root>

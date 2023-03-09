@@ -1,0 +1,1370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xfa generator="Designer_V6.4.0.20180228.1.932123" APIVersion="3.6.18045.0"?>
+<xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2020-08-17T14:16:05Z" uuid="12863fb0-2ba1-41f4-933b-5a912b3a0cae">
+<template xmlns="http://www.xfa.org/schema/xfa-template/3.6/">
+   <?formServer defaultPDFRenderFormat acrobat11.0dynamic?>
+   <?formServer allowRenderCaching 0?>
+   <?formServer formModel both?>
+   <subform name="StyleSheet" layout="tb" locale="de_CH" restoreState="auto">
+      <pageSet>
+         <pageArea name="Page1" id="Page1">
+            <contentArea x="20mm" y="20mm" w="170mm" h="240mm" name="caPage1"/>
+            <medium stock="letter" short="8.5in" long="11in"/>
+            <?templateDesigner expand 1?></pageArea>
+         <?templateDesigner expand 1?></pageSet>
+      <subform name="page" layout="tb" w="170mm">
+         <subform layout="tb" name="headings" usehref=".#som($template.#subform.designer__stylesheet.subform)">
+            <draw name="heading1" usehref=".#som($template.#subform.designer__stylesheet.h1)">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text>Heading 1 - Form Title</text>
+               </value>
+               <assist role="H1"/>
+            </draw>
+            <draw name="heading2" usehref=".#som($template.#subform.designer__stylesheet.h2)">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text>Heading 2 - Section Title</text>
+               </value>
+               <assist role="H2"/>
+            </draw>
+            <draw name="heading3" usehref=".#som($template.#subform.designer__stylesheet.h3)">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text>Heading 3 - Paragraph Title</text>
+               </value>
+               <assist role="H3"/>
+            </draw>
+            <draw name="heading4" usehref=".#som($template.#subform.designer__stylesheet.h3)">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text>Heading 4 - Paragraph Title</text>
+               </value>
+               <border>
+                  <corner presence="hidden" stroke="solid" join="square" inverted="0" thickness="0.25mm" radius="0in">
+                     <color value="0,0,0"/>
+                  </corner>
+                  <corner presence="visible" stroke="solid" join="square" inverted="0" thickness="0.5pt" radius="0in">
+                     <color value="0,0,0"/>
+                  </corner>
+                  <corner presence="visible" stroke="solid" join="square" inverted="0" thickness="0.5pt" radius="0in">
+                     <color value="0,0,0"/>
+                  </corner>
+                  <corner presence="visible" stroke="solid" join="square" inverted="0" thickness="0.5pt" radius="0in">
+                     <color value="0,0,0"/>
+                  </corner>
+                  <edge presence="hidden" stroke="solid" thickness="0.25mm">
+                     <color value="0,0,0"/>
+                  </edge>
+                  <edge presence="hidden"/>
+                  <edge presence="hidden"/>
+                  <edge presence="hidden"/>
+               </border>
+               <margin topInset="0mm"/>
+               <assist role="H4"/>
+            </draw>
+            <draw name="body" usehref=".#som($template.#subform.designer__stylesheet.body)">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</text>
+               </value>
+            </draw>
+            <?templateDesigner expand 0?>
+         </subform>
+         <subform layout="tb" name="textfields" usehref=".#som($template.#subform.designer__stylesheet.subform)">
+            <draw name="title" usehref=".#som($template.#subform.designer__stylesheet.h2)">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text>Text Fields (single and multi column layout)</text>
+               </value>
+               <assist role="H2"/>
+            </draw>
+            <subform minH="12mm" layout="tb" name="oneColumnLayout" usehref=".#som($template.#subform.designer__stylesheet.subform)">
+               <field name="textbox" usehref=".#som($template.#subform.designer__stylesheet.textfieldOneColumn)">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <caption>
+                     <value>
+                        <text>Textfield 1 Column</text>
+                     </value>
+                     <para>
+                        <hyphenation/>
+                     </para>
+                  </caption>
+                  <value>
+                     <text>Placeholder Text</text>
+                  </value>
+                  <para>
+                     <hyphenation/>
+                  </para>
+                  <font/>
+               </field>
+               <?templateDesigner expand 1?>
+            </subform>
+            <subform minH="22mm" layout="lr-tb" name="twoColumnLayout" usehref=".#som($template.#subform.designer__stylesheet.subform)">
+               <field name="textbox1" usehref=".#som($template.#subform.designer__stylesheet.textfieldTwoColumns)">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <caption>
+                     <value>
+                        <text>Textfield 2 Column</text>
+                     </value>
+                  </caption>
+                  <value>
+                     <text>Placeholder Text</text>
+                  </value>
+               </field>
+               <draw name="spacer8mm" usehref=".#som($template.#subform.designer__stylesheet.spacer8mm)">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text/>
+                  </value>
+                  <?renderCache.bounds 22677 28346 0 0 0 0 0 0?></draw>
+               <field name="textbox2" usehref=".#som($template.#subform.designer__stylesheet.textfieldTwoColumns)">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <caption>
+                     <value>
+                        <text>Textfield 2 Column</text>
+                     </value>
+                  </caption>
+                  <value>
+                     <text>Placeholder Text</text>
+                  </value>
+               </field>
+               <?templateDesigner expand 1?>
+            </subform>
+            <subform minH="22mm" layout="lr-tb" name="threeColumnLayout" usehref=".#som($template.#subform.designer__stylesheet.subform)">
+               <field name="textbox1" usehref=".#som($template.#subform.designer__stylesheet.textfieldThreeColumns)">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <caption>
+                     <value>
+                        <text>Textfield 3 Column</text>
+                     </value>
+                  </caption>
+                  <value>
+                     <text>Placeholder Text</text>
+                  </value>
+               </field>
+               <draw name="spacer8mm" usehref=".#som($template.#subform.designer__stylesheet.spacer8mm)">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text/>
+                  </value>
+                  <?renderCache.bounds 22677 28346 0 0 0 0 0 0?></draw>
+               <field name="textbox2" usehref=".#som($template.#subform.designer__stylesheet.textfieldThreeColumns)">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <caption>
+                     <value>
+                        <text>Textfield 3 Column</text>
+                     </value>
+                  </caption>
+                  <value>
+                     <text>Placeholder Text</text>
+                  </value>
+               </field>
+               <draw name="spacer8mm" usehref=".#som($template.#subform.designer__stylesheet.spacer8mm)">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text/>
+                  </value>
+                  <?renderCache.bounds 22677 28346 0 0 0 0 0 0?></draw>
+               <field name="textbox3" usehref=".#som($template.#subform.designer__stylesheet.textfieldThreeColumns)">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <caption>
+                     <value>
+                        <text>Textfield 3 Column</text>
+                     </value>
+                  </caption>
+                  <value>
+                     <text>Placeholder Text</text>
+                  </value>
+               </field>
+               <?templateDesigner expand 1?>
+            </subform>
+            <?templateDesigner expand 0?>
+         </subform>
+         <subform layout="tb" name="datefields" usehref=".#som($template.#subform.designer__stylesheet.subform)">
+            <draw name="title" usehref=".#som($template.#subform.designer__stylesheet.h2)">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text>Date Fields (single and multi column layout)</text>
+               </value>
+               <assist role="H2"/>
+            </draw>
+            <subform minH="12mm" layout="tb" name="oneColumnLayout" usehref=".#som($template.#subform.designer__stylesheet.subform)">
+               <field name="datefield" vAlign="top" usehref=".#som($template.#subform.designer__stylesheet.datefieldOneColumn)">
+                  <ui>
+                     <dateTimeEdit/>
+                  </ui>
+                  <value>
+                     <date>2020-04-14</date>
+                  </value>
+                  <caption>
+                     <value>
+                        <text>Datefield 1 Column</text>
+                     </value>
+                     <para>
+                        <hyphenation/>
+                     </para>
+                  </caption>
+                  <format>
+                     <picture>date{DD.MM.YYYY}</picture>
+                  </format>
+                  <para>
+                     <hyphenation/>
+                  </para>
+               </field>
+               <?templateDesigner expand 1?>
+            </subform>
+            <subform minH="22mm" layout="lr-tb" name="twoColumnLayout" usehref=".#som($template.#subform.designer__stylesheet.subform)">
+               <field name="datefield1" vAlign="top" usehref=".#som($template.#subform.designer__stylesheet.datefieldTwoColumns)">
+                  <ui>
+                     <dateTimeEdit/>
+                  </ui>
+                  <value>
+                     <date>2020-04-14</date>
+                  </value>
+                  <caption>
+                     <value>
+                        <exData contentType="text/html">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="letter-spacing:0in">Datefield<span style="text-decoration:none"> 2 Columns</span></p></body>
+                        </exData>
+                     </value>
+                  </caption>
+                  <format>
+                     <picture>date{DD.MM.YYYY}</picture>
+                  </format>
+               </field>
+               <draw name="spacer8mm" usehref=".#som($template.#subform.designer__stylesheet.spacer8mm)">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text/>
+                  </value>
+                  <?renderCache.bounds 22677 28346 0 0 0 0 0 0?></draw>
+               <field name="datefield2" vAlign="top" usehref=".#som($template.#subform.designer__stylesheet.datefieldTwoColumns)">
+                  <ui>
+                     <dateTimeEdit/>
+                  </ui>
+                  <value>
+                     <date/>
+                  </value>
+                  <caption>
+                     <value>
+                        <exData contentType="text/html">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="letter-spacing:0in">Datefield<span style="text-decoration:none"> 2 Columns</span></p></body>
+                        </exData>
+                     </value>
+                  </caption>
+               </field>
+               <?templateDesigner expand 1?>
+            </subform>
+            <subform minH="22mm" layout="lr-tb" name="threeColumnLayout" usehref=".#som($template.#subform.designer__stylesheet.subform)">
+               <field name="datefield1" vAlign="top" usehref=".#som($template.#subform.designer__stylesheet.datefieldThreeColumns)">
+                  <ui>
+                     <dateTimeEdit/>
+                  </ui>
+                  <value>
+                     <date>2020-04-14</date>
+                  </value>
+                  <caption>
+                     <value>
+                        <exData contentType="text/html">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="letter-spacing:0in">Datefield<span style="text-decoration:none"> 3 Columns</span></p></body>
+                        </exData>
+                     </value>
+                  </caption>
+                  <format>
+                     <picture>date{DD.MM.YYYY}</picture>
+                  </format>
+               </field>
+               <draw name="spacer8mm" usehref=".#som($template.#subform.designer__stylesheet.spacer8mm)">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text/>
+                  </value>
+                  <?renderCache.bounds 22677 28346 0 0 0 0 0 0?></draw>
+               <field name="datefield2" vAlign="top" usehref=".#som($template.#subform.designer__stylesheet.datefieldThreeColumns)">
+                  <ui>
+                     <dateTimeEdit/>
+                  </ui>
+                  <value>
+                     <date/>
+                  </value>
+                  <caption>
+                     <value>
+                        <exData contentType="text/html">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="letter-spacing:0in">Datefield<span style="text-decoration:none"> 3 Columns</span></p></body>
+                        </exData>
+                     </value>
+                  </caption>
+               </field>
+               <draw name="spacer8mm" usehref=".#som($template.#subform.designer__stylesheet.spacer8mm)">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text/>
+                  </value>
+                  <?renderCache.bounds 22677 28346 0 0 0 0 0 0?></draw>
+               <field name="datefield3" vAlign="top" usehref=".#som($template.#subform.designer__stylesheet.datefieldThreeColumns)">
+                  <ui>
+                     <dateTimeEdit/>
+                  </ui>
+                  <value>
+                     <date/>
+                  </value>
+                  <caption>
+                     <value>
+                        <exData contentType="text/html">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="letter-spacing:0in">Datefield<span style="text-decoration:none"> 3 Columns</span></p></body>
+                        </exData>
+                     </value>
+                  </caption>
+               </field>
+               <?templateDesigner expand 1?>
+            </subform>
+            <?templateDesigner expand 0?>
+            <keep previous="none"/>
+            <breakAfter targetType="auto"/>
+            <breakBefore targetType="auto" startNew="0"/>
+         </subform>
+         <subform layout="tb" name="dropdowns" usehref=".#som($template.#subform.designer__stylesheet.subform)">
+            <draw name="title" usehref=".#som($template.#subform.designer__stylesheet.h2)">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text>Dropdowns (single and multi column layout)</text>
+               </value>
+               <assist role="H2"/>
+            </draw>
+            <subform minH="12mm" layout="tb" name="oneColumnLayout" usehref=".#som($template.#subform.designer__stylesheet.subform)">
+               <field name="dropdown" vAlign="top" usehref=".#som($template.#subform.designer__stylesheet.dropdownOneColumn)">
+                  <ui>
+                     <choiceList textEntry="0" open="userControl"/>
+                  </ui>
+                  <caption>
+                     <value>
+                        <text>Dropdown 1 Column</text>
+                     </value>
+                     <para>
+                        <hyphenation/>
+                     </para>
+                  </caption>
+                  <format>
+                     <picture>date{DD.MM.YYYY}</picture>
+                  </format>
+                  <value>
+                     <text>Option 1</text>
+                  </value>
+                  <items save="1">
+                     <text>Option 1</text>
+                     <text>Option 2</text>
+                  </items>
+                  <para>
+                     <hyphenation/>
+                  </para>
+               </field>
+               <?templateDesigner expand 1?>
+            </subform>
+            <subform minH="22mm" layout="lr-tb" name="twoColumnLayout" usehref=".#som($template.#subform.designer__stylesheet.subform)">
+               <field name="dropdown1" vAlign="top" usehref=".#som($template.#subform.designer__stylesheet.dropdownTwoColumns)">
+                  <ui>
+                     <choiceList textEntry="0" open="userControl"/>
+                  </ui>
+                  <caption>
+                     <value>
+                        <text>Dropdown 2 Columns</text>
+                     </value>
+                     <margin/>
+                  </caption>
+                  <format>
+                     <picture>date{DD.MM.YYYY}</picture>
+                  </format>
+                  <items save="1">
+                     <text>Option 1</text>
+                     <text>Option 2</text>
+                  </items>
+                  <value>
+                     <text>Option 2</text>
+                  </value>
+               </field>
+               <draw name="spacer8mm" usehref=".#som($template.#subform.designer__stylesheet.spacer8mm)">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text/>
+                  </value>
+                  <?renderCache.bounds 22677 28346 0 0 0 0 0 0?></draw>
+               <field name="dropdown2" vAlign="top" usehref=".#som($template.#subform.designer__stylesheet.dropdownTwoColumns)">
+                  <ui>
+                     <choiceList textEntry="0" open="userControl"/>
+                  </ui>
+                  <caption>
+                     <value>
+                        <text>Dropdown 2 Columns</text>
+                     </value>
+                  </caption>
+                  <items save="1">
+                     <text>Option 1</text>
+                  </items>
+               </field>
+               <?templateDesigner expand 1?>
+            </subform>
+            <subform minH="22mm" layout="lr-tb" name="threeColumnLayout" usehref=".#som($template.#subform.designer__stylesheet.subform)">
+               <field name="dropdown1" vAlign="top" usehref=".#som($template.#subform.designer__stylesheet.dropdownThreeColumns)">
+                  <ui>
+                     <choiceList textEntry="0" open="userControl"/>
+                  </ui>
+                  <caption>
+                     <value>
+                        <text>Dropdown 3 Columns</text>
+                     </value>
+                     <margin/>
+                  </caption>
+                  <format>
+                     <picture>date{DD.MM.YYYY}</picture>
+                  </format>
+                  <items save="1">
+                     <text>Option 1</text>
+                     <text>Option 2</text>
+                  </items>
+                  <value>
+                     <text>Option 1</text>
+                  </value>
+               </field>
+               <draw name="spacer8mm" usehref=".#som($template.#subform.designer__stylesheet.spacer8mm)">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text/>
+                  </value>
+                  <?renderCache.bounds 22677 28346 0 0 0 0 0 0?></draw>
+               <field name="dropdown2" vAlign="top" usehref=".#som($template.#subform.designer__stylesheet.dropdownThreeColumns)">
+                  <ui>
+                     <choiceList textEntry="0" open="userControl"/>
+                  </ui>
+                  <caption>
+                     <value>
+                        <text>Dropdown 3 Columns</text>
+                     </value>
+                  </caption>
+                  <items save="1">
+                     <text>Option 1</text>
+                  </items>
+               </field>
+               <draw name="spacer8mm" usehref=".#som($template.#subform.designer__stylesheet.spacer8mm)">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text/>
+                  </value>
+                  <?renderCache.bounds 22677 28346 0 0 0 0 0 0?></draw>
+               <field name="dropdown3" vAlign="top" usehref=".#som($template.#subform.designer__stylesheet.dropdownThreeColumns)">
+                  <ui>
+                     <choiceList textEntry="0" open="userControl"/>
+                  </ui>
+                  <caption>
+                     <value>
+                        <text>Dropdown 3 Columns</text>
+                     </value>
+                  </caption>
+                  <items save="1">
+                     <text>Option 1</text>
+                  </items>
+               </field>
+               <?templateDesigner expand 1?>
+            </subform>
+            <keep previous="none"/>
+            <breakBefore targetType="pageArea" startNew="1"/>
+            <?templateDesigner expand 0?>
+         </subform>
+         <subform minH="13mm" layout="tb" usehref=".#som($template.#subform.designer__stylesheet.subform)" name="checkboxes">
+            <keep intact="contentArea"/>
+            <draw name="title" usehref=".#som($template.#subform.designer__stylesheet.h2)">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text>Checkboxes</text>
+               </value>
+               <assist role="H2"/>
+            </draw>
+            <subform x="0in" y="10.351mm" minH="14mm" layout="tb" name="group" usehref=".#som($template.#subform.designer__stylesheet.subform)">
+               <keep intact="contentArea"/>
+               <draw name="caption" h="4mm" minW="51.333mm">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text>Radiobutton List</text>
+                  </value>
+                  <font typeface="Arial" size="7pt" weight="bold"/>
+                  <border presence="hidden"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               </draw>
+               <field name="checkbox1" usehref=".#som($template.#subform.designer__stylesheet.checkbox)" w="51.333mm">
+                  <ui>
+                     <checkButton/>
+                  </ui>
+                  <font typeface="Myriad Pro"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <integer>0</integer>
+                  </value>
+                  <caption reserve="46.667mm">
+                     <value>
+                        <text>Check Box</text>
+                     </value>
+                  </caption>
+                  <items>
+                     <integer>1</integer>
+                     <integer>0</integer>
+                     <integer>2</integer>
+                  </items>
+                  <bind match="none"/>
+               </field>
+               <field name="checkbox2" usehref=".#som($template.#subform.designer__stylesheet.checkbox)" w="51.333mm">
+                  <ui>
+                     <checkButton/>
+                  </ui>
+                  <font typeface="Myriad Pro"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <integer>0</integer>
+                  </value>
+                  <caption reserve="46.667mm">
+                     <value>
+                        <text>Check Box</text>
+                     </value>
+                  </caption>
+                  <items>
+                     <integer>1</integer>
+                     <integer>0</integer>
+                     <integer>2</integer>
+                  </items>
+                  <bind match="none"/>
+               </field>
+               <?templateDesigner expand 1?></subform>
+            <?templateDesigner expand 0?>
+         </subform>
+         <subform minH="13mm" layout="tb" usehref=".#som($template.#subform.designer__stylesheet.subform)" name="radiobuttons">
+            <keep intact="none"/>
+            <draw name="title" usehref=".#som($template.#subform.designer__stylesheet.h2)">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text>Radiobuttons</text>
+               </value>
+               <assist role="H2"/>
+            </draw>
+            <subform x="0in" y="10.351mm" layout="tb" name="group" usehref=".#som($template.#subform.designer__stylesheet.subform)">
+               <draw name="caption" h="4mm" minW="51.333mm">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text>Radiobutton List</text>
+                  </value>
+                  <font typeface="Arial" size="7pt" weight="bold"/>
+                  <border presence="hidden"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               </draw>
+               <exclGroup name="group" layout="tb">
+                  <?templateDesigner itemValuesSpecified 1?>
+                  <field name="radiobutton1" usehref=".#som($template.#subform.designer__stylesheet.designer__radiobutton_holder.radiobutton)">
+                     <ui>
+                        <checkButton/>
+                     </ui>
+                     <font typeface="Myriad Pro"/>
+                     <para vAlign="middle"/>
+                     <caption>
+                        <value>
+                           <text>Radio Button</text>
+                        </value>
+                     </caption>
+                     <items save="0" presence="visible">
+                        <text>1</text>
+                     </items>
+                     <value>
+                        <text xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                     </value>
+                  </field>
+                  <bind match="none"/>
+                  <field name="radiobutton2" usehref=".#som($template.#subform.designer__stylesheet.designer__radiobutton_holder.radiobutton)">
+                     <ui>
+                        <checkButton/>
+                     </ui>
+                     <font typeface="Myriad Pro"/>
+                     <para vAlign="middle"/>
+                     <caption>
+                        <value>
+                           <text>Radio Button</text>
+                        </value>
+                     </caption>
+                     <items save="0" presence="visible">
+                        <text>2</text>
+                     </items>
+                  </field>
+                  <field name="radiobutton3" usehref=".#som($template.#subform.designer__stylesheet.designer__radiobutton_holder.radiobutton)">
+                     <ui>
+                        <checkButton/>
+                     </ui>
+                     <font typeface="Myriad Pro"/>
+                     <para vAlign="middle"/>
+                     <caption>
+                        <value>
+                           <text>Radio Button</text>
+                        </value>
+                     </caption>
+                     <items save="0" presence="visible">
+                        <text>3</text>
+                     </items>
+                  </field>
+                  <?templateDesigner expand 1?></exclGroup>
+               <?templateDesigner expand 1?>
+            </subform>
+            <?templateDesigner expand 0?>
+         </subform>
+         <subform minH="22.351mm" layout="tb" name="table" usehref=".#som($template.#subform.designer__stylesheet.subform)">
+            <draw name="title" usehref=".#som($template.#subform.designer__stylesheet.h2)">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text>Table</text>
+               </value>
+               <assist role="H2"/>
+            </draw>
+            <subform name="table" layout="table" columnWidths="56.6666mm 56.666mm 56.666mm">
+               <border>
+                  <edge/>
+               </border>
+               <subform layout="row" name="header" id="HeaderRow_ID">
+                  <assist role="TH"/>
+                  <draw h="6mm" name="cell1">
+                     <border>
+                        <edge/>
+                        <corner thickness="0.1778mm"/>
+                     </border>
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <value>
+                        <text>Header</text>
+                     </value>
+                     <font typeface="Arial" size="9.5pt" weight="bold"/>
+                     <margin topInset="0mm" bottomInset="0mm" leftInset="2mm" rightInset="0mm"/>
+                     <para vAlign="middle"/>
+                  </draw>
+                  <draw h="6mm" name="cell2">
+                     <border>
+                        <edge/>
+                        <corner thickness="0.1778mm"/>
+                     </border>
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <value>
+                        <text>Header</text>
+                     </value>
+                     <font typeface="Arial" size="9.5pt" weight="bold"/>
+                     <margin topInset="0mm" bottomInset="0mm" leftInset="2mm" rightInset="0mm"/>
+                     <para vAlign="middle"/>
+                  </draw>
+                  <draw h="6mm" name="cell3">
+                     <border>
+                        <edge/>
+                        <corner thickness="0.1778mm"/>
+                     </border>
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <value>
+                        <text>Header</text>
+                     </value>
+                     <font typeface="Arial" size="9.5pt" weight="bold"/>
+                     <margin topInset="0mm" bottomInset="0mm" leftInset="2mm" rightInset="0mm"/>
+                     <para vAlign="middle"/>
+                  </draw>
+                  <border>
+                     <edge presence="hidden"/>
+                  </border>
+                  <occur max="-1"/>
+                  <?templateDesigner expand 1?>
+               </subform>
+               <subform layout="row" name="row">
+                  <assist role="TR"/>
+                  <field name="cell1" w="56.667mm" minH="6mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9.5pt" typeface="Arial"/>
+                     <margin topInset="0mm" bottomInset="0mm" leftInset="2mm" rightInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <border>
+                        <edge/>
+                        <corner thickness="0.1778mm"/>
+                     </border>
+                  </field>
+                  <field name="cell2" w="56.666mm" minH="6mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9.5pt" typeface="Arial"/>
+                     <margin topInset="0mm" bottomInset="0mm" leftInset="2mm" rightInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <border>
+                        <edge/>
+                        <corner thickness="0.1778mm"/>
+                     </border>
+                  </field>
+                  <field name="cell3" w="56.666mm" minH="6mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9.5pt" typeface="Arial"/>
+                     <margin topInset="0mm" bottomInset="0mm" leftInset="2mm" rightInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <border>
+                        <edge/>
+                        <corner thickness="0.1778mm"/>
+                     </border>
+                  </field>
+                  <border>
+                     <edge presence="hidden"/>
+                  </border>
+                  <?templateDesigner expand 1?>
+               </subform>
+               <?templateDesigner rowpattern first:1, next:1, firstcolor:f0f0f0, nextcolor:ffffff, apply:0?>
+               <overflow leader="header"/>
+               <?templateDesigner expand 0?>
+            </subform>
+            <?templateDesigner expand 0?>
+         </subform>
+         <bind match="none"/>
+         <?templateDesigner expand 1?></subform>
+      <desc>
+         <text name="version">6.1.0.20150515.1.919161.918415</text>
+      </desc>
+      <proto>
+         <subform name="designer__stylesheet">
+            <draw name="h2" w="170mm" minH="13mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <font typeface="Arial" weight="bold" size="11pt"/>
+               <margin topInset="3mm" bottomInset="7mm" leftInset="0mm" rightInset="0mm"/>
+               <border>
+                  <edge thickness="0.35mm"/>
+                  <edge presence="hidden"/>
+                  <edge presence="hidden"/>
+                  <edge presence="hidden"/>
+                  <corner thickness="0.35mm"/>
+                  <corner/>
+                  <corner/>
+                  <corner/>
+               </border>
+               <assist role="H2"/>
+            </draw>
+            <draw name="body" minH="5mm" w="170mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <font typeface="Arial" size="9.5pt"/>
+               <margin topInset="0mm" bottomInset="5mm" leftInset="0mm" rightInset="0mm"/>
+               <para vAlign="middle"/>
+               <border>
+                  <edge presence="hidden"/>
+               </border>
+            </draw>
+            <exclGroup name="designer__radiobutton_holder">
+               <field name="radiobutton" w="56.666mm" h="5mm">
+                  <ui>
+                     <checkButton size="2.8222mm" shape="round" mark="circle">
+                        <border>
+                           <edge/>
+                        </border>
+                     </checkButton>
+                  </ui>
+                  <margin leftInset="0mm" rightInset="0mm" topInset="0mm" bottomInset="0mm"/>
+                  <caption placement="right" reserve="52mm">
+                     <para vAlign="middle" spaceAbove="2.5pt"/>
+                     <font typeface="Arial" size="9.5pt"/>
+                  </caption>
+                  <border>
+                     <edge presence="hidden"/>
+                  </border>
+               </field>
+            </exclGroup>
+            <field name="textfieldOneColumn" w="170mm" minH="13mm">
+               <ui>
+                  <textEdit>
+                     <border>
+                        <edge presence="hidden"/>
+                        <edge presence="hidden"/>
+                        <edge thickness="0.15mm"/>
+                        <edge presence="hidden"/>
+                        <corner presence="hidden"/>
+                        <corner presence="hidden"/>
+                        <corner thickness="0.15mm"/>
+                        <corner presence="hidden"/>
+                     </border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial" size="9.5pt"/>
+               <margin topInset="0mm" bottomInset="3mm" leftInset="0mm" rightInset="0mm"/>
+               <para vAlign="middle" spaceAbove="2pt" spaceBelow="2pt"/>
+               <caption reserve="4mm" placement="top">
+                  <para vAlign="middle"/>
+                  <font typeface="Arial" size="7pt" weight="bold"/>
+               </caption>
+               <border>
+                  <edge presence="hidden"/>
+               </border>
+            </field>
+            <field name="textfieldThreeColumns" w="51.333mm" h="13mm">
+               <ui>
+                  <textEdit hScrollPolicy="off">
+                     <border>
+                        <corner presence="hidden"/>
+                        <corner presence="hidden"/>
+                        <corner thickness="0.15mm"/>
+                        <corner presence="hidden"/>
+                        <edge presence="hidden"/>
+                        <edge presence="hidden"/>
+                        <edge thickness="0.15mm"/>
+                        <edge presence="hidden"/>
+                     </border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial" size="9.5pt"/>
+               <margin topInset="0mm" bottomInset="3mm" leftInset="0mm" rightInset="0mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="4mm" placement="top">
+                  <font size="7pt" typeface="Arial" weight="bold"/>
+                  <para vAlign="middle"/>
+               </caption>
+               <border>
+                  <edge presence="hidden"/>
+               </border>
+            </field>
+            <field name="textfieldTwoColumns" w="81mm" h="13mm">
+               <ui>
+                  <textEdit hScrollPolicy="off">
+                     <border>
+                        <corner presence="hidden"/>
+                        <corner presence="hidden"/>
+                        <corner thickness="0.15mm"/>
+                        <corner presence="hidden"/>
+                        <edge presence="hidden"/>
+                        <edge presence="hidden"/>
+                        <edge thickness="0.15mm"/>
+                        <edge presence="hidden"/>
+                     </border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial" size="9.5pt"/>
+               <margin topInset="0mm" bottomInset="3mm" leftInset="0mm" rightInset="0mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="4mm" placement="top">
+                  <font size="7pt" typeface="Arial" weight="bold"/>
+                  <para vAlign="middle"/>
+               </caption>
+               <border>
+                  <edge presence="hidden"/>
+               </border>
+            </field>
+            <draw name="spacer8mm" w="8mm" h="10mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <font size="11pt" typeface="Arial"/>
+               <margin topInset="0mm" bottomInset="0mm" leftInset="0mm" rightInset="0mm"/>
+               <para vAlign="middle"/>
+               <border>
+                  <edge presence="hidden"/>
+               </border>
+            </draw>
+            <subform name="subform" w="170mm">
+               <margin leftInset="0mm" rightInset="0mm" topInset="0mm" bottomInset="5mm"/>
+               <border>
+                  <edge presence="hidden"/>
+               </border>
+            </subform>
+            <draw name="spacer170mm" w="170mm" h="10mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <font size="11pt" typeface="Arial"/>
+               <margin topInset="0mm" bottomInset="0mm" leftInset="0mm" rightInset="0mm"/>
+               <para vAlign="middle"/>
+               <border>
+                  <edge presence="hidden"/>
+               </border>
+            </draw>
+            <field name="checkbox" w="56.666mm" h="5mm">
+               <ui>
+                  <checkButton size="2.8222mm" mark="check">
+                     <border>
+                        <corner thickness="0.15mm"/>
+                        <edge thickness="0.15mm"/>
+                     </border>
+                  </checkButton>
+               </ui>
+               <margin leftInset="0mm" rightInset="0mm" topInset="0mm" bottomInset="0mm"/>
+               <caption placement="right" reserve="52mm">
+                  <para vAlign="middle" spaceAbove="2.5pt"/>
+                  <font size="9.5pt" typeface="Arial"/>
+               </caption>
+               <border>
+                  <edge presence="hidden"/>
+               </border>
+            </field>
+            <draw name="h3" w="170mm" minH="7mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <font size="9.5pt" typeface="Arial" weight="bold"/>
+               <margin topInset="2mm" bottomInset="5mm" leftInset="0mm" rightInset="0mm"/>
+               <border>
+                  <corner thickness="0.25mm"/>
+                  <corner/>
+                  <corner/>
+                  <corner/>
+                  <edge thickness="0.25mm"/>
+                  <edge presence="hidden"/>
+                  <edge presence="hidden"/>
+                  <edge presence="hidden"/>
+               </border>
+               <assist role="H3"/>
+            </draw>
+            <draw name="h1" w="170mm" minH="13mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <font size="15pt" typeface="Arial" weight="bold"/>
+               <margin topInset="0mm" bottomInset="8mm" leftInset="0mm" rightInset="0mm"/>
+               <border>
+                  <edge presence="hidden" thickness="0.35mm"/>
+                  <edge presence="hidden"/>
+                  <edge presence="hidden"/>
+                  <edge presence="hidden"/>
+                  <corner presence="hidden" thickness="0.35mm"/>
+                  <corner presence="hidden"/>
+                  <corner presence="hidden"/>
+                  <corner presence="hidden"/>
+               </border>
+               <assist role="H1"/>
+            </draw>
+            <draw name="h4" w="170mm" minH="7mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <font size="9.5pt" typeface="Arial" weight="bold"/>
+               <margin topInset="0mm" bottomInset="5mm" leftInset="0mm" rightInset="0mm"/>
+               <border>
+                  <corner presence="hidden" thickness="0.25mm"/>
+                  <corner/>
+                  <corner/>
+                  <corner/>
+                  <edge presence="hidden" thickness="0.25mm"/>
+                  <edge presence="hidden"/>
+                  <edge presence="hidden"/>
+                  <edge presence="hidden"/>
+               </border>
+               <assist role="H4"/>
+            </draw>
+            <field name="datefieldOneColumn" w="170mm" h="13mm">
+               <ui>
+                  <dateTimeEdit>
+                     <border>
+                        <corner presence="hidden"/>
+                        <corner presence="hidden"/>
+                        <corner thickness="0.15mm"/>
+                        <corner presence="hidden"/>
+                        <edge presence="hidden"/>
+                        <edge presence="hidden"/>
+                        <edge thickness="0.15mm"/>
+                        <edge presence="hidden"/>
+                     </border>
+                     <margin/>
+                  </dateTimeEdit>
+               </ui>
+               <font size="9.5pt" typeface="Arial"/>
+               <margin topInset="0mm" bottomInset="3mm" leftInset="0mm" rightInset="0mm"/>
+               <para vAlign="middle" spaceAbove="2pt" spaceBelow="2pt"/>
+               <caption reserve="4mm" placement="top">
+                  <font size="7pt" typeface="Arial" weight="bold"/>
+                  <para vAlign="middle"/>
+               </caption>
+               <border>
+                  <edge presence="hidden"/>
+               </border>
+            </field>
+            <field name="datefieldTwoColumns" w="81mm" h="13mm">
+               <ui>
+                  <dateTimeEdit hScrollPolicy="off">
+                     <border>
+                        <corner presence="hidden"/>
+                        <corner presence="hidden"/>
+                        <corner thickness="0.15mm"/>
+                        <corner presence="hidden"/>
+                        <edge presence="hidden"/>
+                        <edge presence="hidden"/>
+                        <edge thickness="0.15mm"/>
+                        <edge presence="hidden"/>
+                     </border>
+                     <margin/>
+                  </dateTimeEdit>
+               </ui>
+               <font size="9.5pt" typeface="Arial"/>
+               <margin topInset="0mm" bottomInset="3mm" leftInset="0mm" rightInset="0mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="4mm" placement="top">
+                  <font size="7pt" typeface="Arial" weight="bold"/>
+                  <para vAlign="middle"/>
+               </caption>
+               <border>
+                  <edge presence="hidden"/>
+               </border>
+            </field>
+            <field name="datefieldThreeColumns" w="51.333mm" h="13mm">
+               <ui>
+                  <dateTimeEdit hScrollPolicy="off">
+                     <border>
+                        <corner presence="hidden"/>
+                        <corner presence="hidden"/>
+                        <corner thickness="0.15mm"/>
+                        <corner presence="hidden"/>
+                        <edge presence="hidden"/>
+                        <edge presence="hidden"/>
+                        <edge thickness="0.15mm"/>
+                        <edge presence="hidden"/>
+                     </border>
+                     <margin/>
+                  </dateTimeEdit>
+               </ui>
+               <font size="9.5pt" typeface="Arial"/>
+               <margin topInset="0mm" bottomInset="3mm" leftInset="0mm" rightInset="0mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="4mm" placement="top">
+                  <font size="7pt" typeface="Arial" weight="bold"/>
+                  <para vAlign="middle"/>
+               </caption>
+               <border>
+                  <edge presence="hidden"/>
+               </border>
+            </field>
+            <field name="dropdownOneColumn" w="170mm" h="13mm">
+               <ui>
+                  <choiceList>
+                     <border>
+                        <corner presence="hidden"/>
+                        <corner presence="hidden"/>
+                        <corner thickness="0.15mm"/>
+                        <corner presence="hidden"/>
+                        <edge presence="hidden"/>
+                        <edge presence="hidden"/>
+                        <edge thickness="0.15mm"/>
+                        <edge presence="hidden"/>
+                     </border>
+                     <margin/>
+                  </choiceList>
+               </ui>
+               <font size="9.5pt" typeface="Arial"/>
+               <margin topInset="0mm" bottomInset="3mm" leftInset="0mm" rightInset="0mm"/>
+               <para vAlign="middle" spaceAbove="2pt" spaceBelow="2pt"/>
+               <caption reserve="4mm" placement="top">
+                  <font size="7pt" typeface="Arial" weight="bold"/>
+                  <para vAlign="middle"/>
+               </caption>
+               <border>
+                  <edge presence="hidden"/>
+               </border>
+            </field>
+            <field name="dropdownTwoColumns" w="81mm" h="13mm">
+               <ui>
+                  <choiceList>
+                     <border>
+                        <corner presence="hidden"/>
+                        <corner presence="hidden"/>
+                        <corner thickness="0.15mm"/>
+                        <corner presence="hidden"/>
+                        <edge presence="hidden"/>
+                        <edge presence="hidden"/>
+                        <edge thickness="0.15mm"/>
+                        <edge presence="hidden"/>
+                     </border>
+                     <margin/>
+                  </choiceList>
+               </ui>
+               <font size="9.5pt" typeface="Arial"/>
+               <margin topInset="0mm" bottomInset="3mm" leftInset="0mm" rightInset="0mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="4mm" placement="top">
+                  <font size="7pt" typeface="Arial" weight="bold"/>
+                  <para vAlign="middle"/>
+               </caption>
+               <border>
+                  <edge presence="hidden"/>
+               </border>
+            </field>
+            <field name="dropdownThreeColumns" w="51.333mm" h="13mm">
+               <ui>
+                  <choiceList>
+                     <border>
+                        <corner presence="hidden"/>
+                        <corner presence="hidden"/>
+                        <corner thickness="0.15mm"/>
+                        <corner presence="hidden"/>
+                        <edge presence="hidden"/>
+                        <edge presence="hidden"/>
+                        <edge thickness="0.15mm"/>
+                        <edge presence="hidden"/>
+                     </border>
+                     <margin/>
+                  </choiceList>
+               </ui>
+               <font size="9.5pt" typeface="Arial"/>
+               <margin topInset="0mm" bottomInset="3mm" leftInset="0mm" rightInset="0mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="4mm" placement="top">
+                  <font size="7pt" typeface="Arial" weight="bold"/>
+                  <para vAlign="middle"/>
+               </caption>
+               <border>
+                  <edge presence="hidden"/>
+               </border>
+            </field>
+         </subform>
+      </proto>
+      <?templateDesigner Hyphenation excludeInitialCap:1, excludeAllCaps:1, wordCharCnt:7, remainCharCnt:3, pushCharCnt:3?>
+      <?templateDesigner expand 1?>
+      <?renderCache.subset "Adobe Pi Std" 0 0 UTF-16 2 8 0035004F?>
+      <?renderCache.subset "Arial" 0 0 ISO-8859-1 4 156 39 0003000F00110013001400150017002400250026002F0032003300350036003700440045004600470048004A004B004C004D004E004F0050005100520053005400550056005700580059005B005C ,.0124ABCLOPRSTabcdeghijklmnopqrstuvxy?>
+      <?renderCache.subset "Arial" 1 0 ISO-8859-1 4 156 39 0003000B000C00100014001500160017002600270029002B002F0033003500360037004400450046004700480049004A004B004C004E004F00500051005200530055005600570058005A005B005C ()-1234CDFHLPRSTabcdefghiklmnoprstuwxy?></subform>
+   <?templateDesigner DefaultPreviewDynamic 1?>
+   <?templateDesigner WidowOrphanControl 0?>
+   <?templateDesigner Grid show:1, snap:0, units:17, color:ff8080, origin:(0,0), interval:(158750,158750), objsnap:0, guidesnap:0, pagecentersnap:0?>
+   <?originalXFAVersion http://www.xfa.org/schema/xfa-template/3.6/?>
+   <?templateDesigner DefaultLanguage JavaScript?>
+   <?templateDesigner DefaultRunAt client?>
+   <?acrobat JavaScript strictScoping?>
+   <?PDFPrintOptions embedViewerPrefs 0?>
+   <?PDFPrintOptions embedPrintOnFormOpen 0?>
+   <?PDFPrintOptions scalingPrefs 0?>
+   <?PDFPrintOptions enforceScalingPrefs 0?>
+   <?PDFPrintOptions paperSource 0?>
+   <?PDFPrintOptions duplexMode 0?>
+   <?templateDesigner DefaultPreviewType interactive?>
+   <?templateDesigner DefaultPreviewPagination simplex?>
+   <?templateDesigner XDPPreviewFormat 20?>
+   <?templateDesigner DefaultCaptionFontSettings face:Arial;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultValueFontSettings face:Arial;size:10;weight:normal;style:normal?>
+   <?templateDesigner SaveTaggedPDF 1?>
+   <?templateDesigner SavePDFWithEmbeddedFonts 1?>
+   <?templateDesigner FormTargetVersion 36?>
+   <?templateDesigner Zoom 194?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?>
+   <?templateDesigner Guidelines h:9341600;h:8455200?></template>
+<config xmlns="http://www.xfa.org/schema/xci/3.0/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+         <version>1.7</version>
+         <adobeExtensionLevel>11</adobeExtensionLevel>
+      </pdf>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+   <psMap>
+      <font typeface="Fira Sans" psName="FiraSans-Regular" weight="normal" posture="normal"/>
+      <font typeface="Fira Sans" psName="FiraSans-Bold" weight="bold" posture="normal"/>
+      <font typeface="Lora" psName="Lora-Bold" weight="bold" posture="normal"/>
+      <font typeface="Lora" psName="Lora-Regular" weight="normal" posture="normal"/>
+      <font typeface="Franklin Gothic Medium" psName="FranklinGothic-Medium" weight="normal" posture="normal"/>
+   </psMap>
+</config>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale name="de_CH" desc="German (Switzerland)">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>Januar</month>
+            <month>Februar</month>
+            <month>März</month>
+            <month>April</month>
+            <month>Mai</month>
+            <month>Juni</month>
+            <month>Juli</month>
+            <month>August</month>
+            <month>September</month>
+            <month>Oktober</month>
+            <month>November</month>
+            <month>Dezember</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mrz</month>
+            <month>Apr</month>
+            <month>Mai</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Okt</month>
+            <month>Nov</month>
+            <month>Dez</month>
+         </monthNames>
+         <dayNames>
+            <day>Sonntag</day>
+            <day>Montag</day>
+            <day>Dienstag</day>
+            <day>Mittwoch</day>
+            <day>Donnerstag</day>
+            <day>Freitag</day>
+            <day>Samstag</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>So</day>
+            <day>Mo</day>
+            <day>Di</day>
+            <day>Mi</day>
+            <day>Do</day>
+            <day>Fr</day>
+            <day>Sa</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>vorm.</meridiem>
+            <meridiem>nachm.</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>v. Chr.</era>
+            <era>n. Chr.</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, D. MMMM YYYY</datePattern>
+         <datePattern name="long">D. MMMM YYYY</datePattern>
+         <datePattern name="med">DD.MM.YYYY</datePattern>
+         <datePattern name="short">DD.MM.YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">H:MM' Uhr 'Z</timePattern>
+         <timePattern name="long">HH:MM:SS Z</timePattern>
+         <timePattern name="med">HH:MM:SS</timePattern>
+         <timePattern name="short">HH:MM</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GjMtkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$Sz,zz9.99</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">.</numberSymbol>
+         <numberSymbol name="grouping">'</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">SFr.</currencySymbol>
+         <currencySymbol name="isoname">CHF</currencySymbol>
+         <currencySymbol name="decimal">.</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+         <typeface name="Adobe Devanagari"/>
+      </typefaces>
+   </locale>
+</localeSet>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.4-c005 78.150055, 2013/08/07-22:58:47        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:pdfuaid="http://www.aiim.org/pdfua/ns/id/" xmlns:desc="http://ns.adobe.com/xfa/promoted-desc/" rdf:about="">
+         <xmp:MetadataDate>2020-08-17T14:16:05Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Designer 6.4</xmp:CreatorTool>
+         <pdf:Producer>Designer 6.4</pdf:Producer>
+         <xmpMM:DocumentID>uuid:12863fb0-2ba1-41f4-933b-5a912b3a0cae</xmpMM:DocumentID>
+         <pdfuaid:part>1</pdfuaid:part>
+         <desc:version rdf:parseType="Resource">
+            <rdf:value>6.1.0.20150515.1.919161.918415</rdf:value>
+            <desc:ref>/template/subform[1]</desc:ref>
+         </desc:version>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta></xdp:xdp>

@@ -1,0 +1,2 @@
+#base=js
+ajila-forms-joeltschopp-numericbox-widget.js

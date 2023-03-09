@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    jcr:language="de"
+    jcr:mixinTypes="[mix:language]"
+    jcr:primaryType="sling:Folder"
+    sling:basename="/apps/ajila-forms-customers/ajila-forms-joeltschopp/i18n/dictionary">
+    <joeltschopp-common-unexpected-error-body
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="joeltschopp-common-unexpected-error-body"
+        sling:message="Es ist ein unerwarteter Fehler aufgetreten. Bitte versuchen Sie es später erneut."/>
+    <joeltschopp-common-communication-error-body
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="joeltschopp-common-communication-error-body"
+        sling:message="Das Formular kann nicht gesendet werden. Bitte versuchen Sie es später erneut."/>
+    <joeltschopp-common-validation-error-body
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="joeltschopp-common-validation-error-body"
+        sling:message="Beim Validieren ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut."/>
+    <joeltschopp-common-progressbar
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="joeltschopp-common-progressbar"
+        sling:message="Ihr Fortschritt ({0}%)"/>
+    <joeltschopp-common-progressbar-aria
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="joeltschopp-common-progressbar-aria"
+        sling:message="Ihr Fortschritt liegt bei {0}%"/>
+</jcr:root>

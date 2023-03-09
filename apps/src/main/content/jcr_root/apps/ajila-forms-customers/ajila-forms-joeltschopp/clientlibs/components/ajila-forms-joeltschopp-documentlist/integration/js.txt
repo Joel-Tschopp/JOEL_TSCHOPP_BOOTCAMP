@@ -1,0 +1,2 @@
+#base=js
+ajila-forms-joeltschopp-documentlist-widget.js

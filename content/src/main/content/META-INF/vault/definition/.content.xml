@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:vlt="http://www.day.com/jcr/vault/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:created="{Date}2017-06-29T17:17:36.865Z"
+    jcr:createdBy="admin"
+    jcr:description="UI Apps package for Ajila Form Factory"
+    jcr:lastModified="{Date}2017-06-29T17:17:36.865Z"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="vlt:PackageDefinition"
+    buildCount="7"
+    builtWith="Adobe Experience Manager-6.3.0"
+    group="formfactory"
+    lastUnwrapped="{Date}2017-06-29T17:17:36.865Z"
+    lastUnwrappedBy="admin"
+    lastWrapped="{Date}2017-06-29T17:17:36.865Z"
+    lastWrappedBy="admin"
+    name="formfactory.ui.apps"
+    version="0.0.1-SNAPSHOT">
+    <thumbnail.png/>
+    <filter jcr:primaryType="nt:unstructured">
+        <f0
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/apps/formfactory"
+            rules="[]"/>
+        <f1
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/etc/designs/formfactory"
+            rules="[]"/>
+    </filter>
+</jcr:root>

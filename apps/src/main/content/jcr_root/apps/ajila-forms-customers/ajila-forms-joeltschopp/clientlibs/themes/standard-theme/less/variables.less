@@ -1,0 +1,91 @@
+/*
+  =================================================================================================================
+  Variable definitions. Define fonts, colors and logo-path here.
+  =================================================================================================================
+*/
+
+// Font settings
+@default-font: 'Arial', sans-serif;
+@title-font: 'Arial', sans-serif;
+
+// Main color settings
+@main-color: #0d477d;
+@secondary-color: #248aee;
+@primary-background-color: #ffffff;
+@text-color: #333333;
+@control-primary-color: #333333;
+@control-secondary-color: #d0d0d0;
+@idle-color: #6e6e6e;
+@focus-text-color: #333333;
+@focus-color: #0d477d;
+@filled-border-color: #0d477d;
+@info-color: #3f6d81;
+@error-color: #a81204;
+@alert-color: #f09400;
+@success-color: #32854b;
+@hyperlink-color: #1010e6;
+
+// Control specific colors
+@background-color: #f4f4f4;
+@calendar-selected-background-color: @background-color;
+@calendar-selected-text-color: @text-color;
+@documentlist-background-color: @background-color;
+@infobox-color: #ebf3f6;
+@infobox-text-color: @info-color;
+@errorbox-color: #f8d7db;
+@alertbox-color: #fff9e3;
+@autocomplete-hover-background-color: @background-color;
+@autocomplete-hover-font-color: @text-color;
+@autocomplete-border-color: @idle-color;
+@icon-background-color: #969696;
+@tab-selected-color: #0070d2;
+
+// Header
+@header-background-color: @background-color;
+@header1-font-color: @text-color;
+@header1-font-weight: bold;
+@header2-font-color: @header1-font-color;
+@header2-font-weight: @header1-font-weight;
+@header-bar-background-color: @main-color;
+@header-bar-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+@header-bar-height: 40px;
+@header-overall-height: 130px;
+
+// Font sizes desktop
+@header1-font-size: 12px;
+@header2-font-size: 18px;
+@heading1-font-size: 24px;
+@heading2-font-size: 20px;
+@heading3-font-size: 16px;
+@text-font-size-normal: 16px;
+@text-font-size-medium: 14px;
+@text-font-size-small: 12px;
+@button-font-size: 16px;
+
+// Wizard
+@wizard-background-color: @background-color;
+
+// Footer
+@footer-text-display: block;
+@footer-text-color: #ffffff;
+@footer-background-color: @main-color;
+@footer-height: 30px;
+
+// Buttons
+@button-font-color: #ffffff;
+@button-font-weight: bold;
+
+.customer-header {
+  padding-top: 25px;
+  padding-left: 120px;
+  background-image: url(../assets/logo.png);
+  background-repeat: no-repeat;
+  background-size: auto 80px;
+  background-position-y: 5px;
+  background-position-x: 50px;
+}
+
+// Logo with inverted color for Windows High Contrast Mode
+.customer-header-hcm {
+  background-image: url(../assets/logo_white.png);
+}
