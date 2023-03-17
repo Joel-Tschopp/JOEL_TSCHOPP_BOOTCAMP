@@ -182,10 +182,10 @@
                                         sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/textbox"
                                         assistPriority="label"
                                         autofillFieldKeyword="name"
-                                        maxChars="256"
                                         css="widget_ajila-forms-joeltschopp-textbox"
                                         guideNodeClass="guideTextBox"
                                         longDescription="&lt;p>Long description&lt;/p>"
+                                        maxChars="256"
                                         name="textbox1"
                                         shortDescription="&lt;p>Short description&lt;/p>"
                                         textIsRich="[true,true,true]"/>
@@ -195,9 +195,9 @@
                                         sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/textbox"
                                         assistPriority="label"
                                         autofillFieldKeyword="name"
-                                        maxChars="256"
                                         css="widget_ajila-forms-joeltschopp-textbox"
                                         guideNodeClass="guideTextBox"
+                                        maxChars="256"
                                         multiLine="true"
                                         name="textbox2"
                                         shortDescription="&lt;p>Short description&lt;/p>&#xd;&#xa;"
@@ -207,10 +207,10 @@
                                         jcr:title="Numeric Box"
                                         sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/numericbox"
                                         assistPriority="label"
+                                        css="widget_ajila-forms-joeltschopp-numericbox"
                                         displayIsSameAsValidate="true"
                                         displayPatternType="custom"
                                         displayPictureClause="num{(zzzzzzzzzzzzzzzzzzzzzzz.zz)}"
-                                        css="widget_ajila-forms-joeltschopp-numericbox"
                                         guideNodeClass="guideNumericBox"
                                         name="numericBox"
                                         textIsRich="[true,true]"/>
@@ -222,8 +222,8 @@
                                         autofillFieldKeyword="email"
                                         css="widget_ajila-forms-joeltschopp-textbox"
                                         guideNodeClass="guideTextBox"
-                                        name="email"
                                         maxChars="256"
+                                        name="email"
                                         textIsRich="[true,true]"
                                         validatePictureClause="^(([^&lt;>()\\[\\]\\\\.,;:\\s@&quot;]+(\\.[^&lt;>()\\[\\]\\\\.,;:\\s@&quot;]+)*)|(&quot;.+&quot;))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$"
                                         validatePictureClauseMessage="Bitte geben Sie eine gültige E-Mail Adresse an (z.B. max.muster@beispiel.ch)."
@@ -309,12 +309,12 @@
                                                 jcr:primaryType="nt:unstructured"
                                                 jcr:title="Check Box (horizontal)"
                                                 sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/checkbox"
-                                                assistPriority="caption"
                                                 alignment="guideFieldHorizontalAlignment"
-                                                maxChars="256"
+                                                assistPriority="caption"
                                                 css="widget_ajila_forms_checkbox"
                                                 guideNodeClass="guideCheckBox"
                                                 mandatoryMessage="This is a required field"
+                                                maxChars="256"
                                                 name="checkboxHorizontal"
                                                 options="[0=Item 1,1=Item 2,2=Item 3]"
                                                 textIsRich="[true,true]"/>
@@ -322,11 +322,11 @@
                                                 jcr:primaryType="nt:unstructured"
                                                 jcr:title="Check Box (vertical)"
                                                 sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/checkbox"
-                                                assistPriority="caption"
                                                 alignment="guideFieldVerticalAlignment"
-                                                maxChars="256"
+                                                assistPriority="caption"
                                                 css="widget_ajila_forms_checkbox"
                                                 guideNodeClass="guideCheckBox"
+                                                maxChars="256"
                                                 name="checkboxVertical"
                                                 options="[0=Item 1,1=Item 2,2=Item 3]"
                                                 textIsRich="[true,true]"/>
@@ -357,8 +357,8 @@
                                                 jcr:primaryType="nt:unstructured"
                                                 jcr:title="Radio Button (horizontal)"
                                                 sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/radiobutton"
-                                                assistPriority="caption"
                                                 alignment="guideFieldHorizontalAlignment"
+                                                assistPriority="caption"
                                                 css="widget_ajila_forms_radiobutton"
                                                 guideNodeClass="guideRadioButton"
                                                 mandatoryMessage="This is a required field"
@@ -369,8 +369,8 @@
                                                 jcr:primaryType="nt:unstructured"
                                                 jcr:title="Radio Button (vertical)"
                                                 sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/radiobutton"
-                                                assistPriority="caption"
                                                 alignment="guideFieldVerticalAlignment"
+                                                assistPriority="caption"
                                                 css="widget_ajila_forms_radiobutton"
                                                 guideNodeClass="guideRadioButton"
                                                 mandatoryMessage="This is a required field"
@@ -406,8 +406,8 @@
                                                 jcr:primaryType="nt:unstructured"
                                                 jcr:title="Toggle"
                                                 sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/toggleswitch"
-                                                assistPriority="caption"
                                                 alignment="guideFieldHorizontalAlignment"
+                                                assistPriority="caption"
                                                 css="widget_ajila_forms_toggleswitch"
                                                 guideNodeClass="guideCheckBox"
                                                 hideTitle="true"
@@ -422,8 +422,8 @@
                                 jcr:primaryType="nt:unstructured"
                                 jcr:title="Document List"
                                 sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/documentlist"
-                                assistPriority="caption"
                                 alignment="guideFieldVerticalAlignment"
+                                assistPriority="caption"
                                 css="widget_ajila-forms-joeltschopp-documentlist"
                                 guideNodeClass="guideRadioButton"
                                 name="documentList"
@@ -541,25 +541,25 @@
                                         sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/messagebox"
                                         _value="&lt;p>&lt;b>Information&lt;/b>&lt;br>&#xa;Some random information text.&lt;/p>&#xa;"
                                         guideNodeClass="guideTextDraw"
+                                        messageBoxType="infobox"
                                         name="infobox"
-                                        textIsRich="true"
-                                        messageBoxType="infobox"/>
+                                        textIsRich="true"/>
                                     <errobox
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/messagebox"
                                         _value="&lt;p>&lt;b>Error&lt;/b>&lt;br>&#xa;Some random error message.&lt;/p>&#xa;"
                                         guideNodeClass="guideTextDraw"
+                                        messageBoxType="errorbox"
                                         name="errorbox"
-                                        textIsRich="true"
-                                        messageBoxType="errorbox"/>
+                                        textIsRich="true"/>
                                     <alertbox
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/messagebox"
                                         _value="&lt;p>&lt;b>Alert&lt;/b>&lt;br>&#xa;Some random validation alert.&lt;/p>&#xa;"
                                         guideNodeClass="guideTextDraw"
+                                        messageBoxType="alertbox"
                                         name="alertbox"
-                                        textIsRich="true"
-                                        messageBoxType="alertbox"/>
+                                        textIsRich="true"/>
                                 </items>
                             </panel_1500253108>
                         </items>
@@ -601,9 +601,9 @@
                                         jcr:title="Text Box"
                                         sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/textbox"
                                         assistPriority="label"
-                                        maxChars="256"
                                         css="widget_ajila-forms-joeltschopp-textbox"
                                         guideNodeClass="guideTextBox"
+                                        maxChars="256"
                                         name="textbox3"/>
                                 </items>
                                 <layout
@@ -633,18 +633,18 @@
                                         jcr:title="Text Box"
                                         sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/textbox"
                                         assistPriority="label"
-                                        maxChars="256"
                                         css="widget_ajila-forms-joeltschopp-textbox"
                                         guideNodeClass="guideTextBox"
+                                        maxChars="256"
                                         name="textbox4"/>
                                     <textbox_695125257
                                         jcr:primaryType="nt:unstructured"
                                         jcr:title="Text Box"
                                         sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/textbox"
                                         assistPriority="label"
-                                        maxChars="256"
                                         css="widget_ajila-forms-joeltschopp-textbox"
                                         guideNodeClass="guideTextBox"
+                                        maxChars="256"
                                         name="textbox5"/>
                                 </items>
                                 <layout
@@ -678,10 +678,10 @@
                                         jcr:title="Text Box"
                                         sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/textbox"
                                         assistPriority="label"
-                                        maxChars="256"
                                         autofillFieldKeyword="name"
                                         css="widget_ajila-forms-joeltschopp-textbox"
                                         guideNodeClass="guideTextBox"
+                                        maxChars="256"
                                         name="textbox6"
                                         textIsRich="[true,true,true]"/>
                                     <textbox_936079370
@@ -694,9 +694,9 @@
                                         sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/textbox"
                                         assistPriority="label"
                                         autofillFieldKeyword="name"
-                                        maxChars="256"
                                         css="widget_ajila-forms-joeltschopp-textbox"
                                         guideNodeClass="guideTextBox"
+                                        maxChars="256"
                                         name="textbox7"
                                         textIsRich="[true,true,true]"/>
                                     <textbox_1890476208
@@ -709,9 +709,9 @@
                                         sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/textbox"
                                         assistPriority="label"
                                         autofillFieldKeyword="name"
-                                        maxChars="256"
                                         css="widget_ajila-forms-joeltschopp-textbox"
                                         guideNodeClass="guideTextBox"
+                                        maxChars="256"
                                         name="textbox8"
                                         textIsRich="[true,true,true]"/>
                                 </items>
@@ -755,8 +755,8 @@
                                         jcr:primaryType="nt:unstructured"
                                         jcr:title="Row"
                                         sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/panel"
-                                        guideNodeClass="guidePanel"
                                         bindRef="/joeltschoppForm/meta"
+                                        guideNodeClass="guidePanel"
                                         hideTitle="true"
                                         maxOccur="50"
                                         minOccur="1"
@@ -784,9 +784,9 @@
                                                 sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/textbox"
                                                 assistPriority="label"
                                                 autofillFieldKeyword="name"
-                                                maxChars="256"
                                                 css="widget_ajila-forms-joeltschopp-textbox"
                                                 guideNodeClass="guideTextBox"
+                                                maxChars="256"
                                                 name="textbox9"
                                                 textIsRich="[true,true,true]"/>
                                             <textbox
@@ -799,9 +799,9 @@
                                                 sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/textbox"
                                                 assistPriority="label"
                                                 autofillFieldKeyword="name"
-                                                maxChars="256"
                                                 css="widget_ajila-forms-joeltschopp-textbox"
                                                 guideNodeClass="guideTextBox"
+                                                maxChars="256"
                                                 name="textbox10"
                                                 textIsRich="[true,true,true]"/>
                                             <removebutton
@@ -810,13 +810,13 @@
                                                 jcr:lastModified="{Date}2020-07-10T14:33:28.045+02:00"
                                                 jcr:lastModifiedBy="admin"
                                                 jcr:primaryType="nt:unstructured"
+                                                jcr:title="Remove"
                                                 sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/removebutton"
                                                 assistPriority="label"
                                                 colspan="2"
-                                                dorExclusion="true"
                                                 css="widget_ajila-forms-joeltschopp-removebutton"
+                                                dorExclusion="true"
                                                 guideNodeClass="guideButton"
-                                                jcr:title="Remove"
                                                 name="removebutton"
                                                 textIsRich="[true,true]"
                                                 type="Button">
@@ -836,8 +836,8 @@
                                         jcr:title="+ Add row"
                                         sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/tertiarybutton"
                                         assistPriority="label"
-                                        dorExclusion="true"
                                         css="widget_ajila-forms-joeltschopp-tertiarybutton"
+                                        dorExclusion="true"
                                         guideNodeClass="guideButton"
                                         name="tertiarybutton"
                                         textIsRich="[true,true]"
@@ -885,10 +885,10 @@
                                 sling:resourceType="ajila-forms-customers/ajila-forms-joeltschopp/components/controls/messagebox"
                                 _value="&lt;p>&lt;b>Übertragungsfehler&lt;/b>&lt;br>&#xa;Das Formular kann nicht gesendet werden. Bitte versuchen Sie es später erneut.&lt;/p>&#xa;"
                                 guideNodeClass="guideTextDraw"
+                                messageBoxType="errorbox"
                                 name="submitErrorMessage"
                                 textIsRich="true"
-                                visible="{Boolean}false"
-                                messageBoxType="errorbox"/>
+                                visible="{Boolean}false"/>
                             <termsandconditions
                                 jcr:primaryType="nt:unstructured"
                                 jcr:title="Terms and Conditions"
