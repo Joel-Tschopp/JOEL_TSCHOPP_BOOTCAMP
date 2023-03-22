@@ -86,7 +86,7 @@ window.ajila.forms.joeltschopp.common = window.ajila.forms.joeltschopp.common ||
      * Next the (param)value gets cut to the (param)maxLength and then returned.
      */
     function setHelpingChar(value, element, searchValue, amount, maxLength) {
-        if (getValueCount(value, searchValue) <= amount) {
+        if (getValueCount(value, searchValue) < amount) {
             if (value.length == element)
                 value = value + searchValue;
         }
